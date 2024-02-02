@@ -17,7 +17,7 @@ document.head.appendChild(metaKeywords);
 
 var birthyear = 2006; //the variable of the year which harry min khant born.
 var ptype="https"; //the protercall type, http/"+ptype+".
-var domain="harry.github.io"; //domain.
+var domain="harrymkt.github.io"; //domain.
 var linkElement = document.createElement("link");
 linkElement.href = ptype + "://" + domain + "/css/style.css";
 linkElement.rel = "stylesheet";
