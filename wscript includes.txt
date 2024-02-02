@@ -1,0 +1,12 @@
+//header and title
+<script src="/scripts/functions.js"></script>
+<script src="/scripts/all.js"></script>
+<script src="/scripts/nav.js"></script>
+<script src="/scripts/footer.js"></script>
+<script>sett("t");</script>
+
+//navigation
+<script>navstart();</script>
+
+//footer
+<script>addfooter();</script>
