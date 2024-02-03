@@ -58,7 +58,6 @@ document.body.appendChild(navigationElement);
 var pages = [
 { name: "Home", url: "" + ptype + "://" + window.location.hostname + "/", accesskey: "h" },
 { name: "Projects", url: "" + ptype + "://" + window.location.hostname + "/projects/", accesskey: "p" },
-{ name: "Useful resources", url: "" + ptype + "://" + window.location.hostname + "/resources", accesskey: "r" },
 { name: "Useful communities", url: "" + ptype + "://" + window.location.hostname + "/community", accesskey: "" },
 { name: "blog", url: "https://hblog.rf.gd", accesskey: "b" }
 ];

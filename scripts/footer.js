@@ -51,11 +51,17 @@ document.body.appendChild(fdd);
 
 var fd=document.createElement("div");
 // Create individual paragraphs with links
+var aboutLink = document.createElement("p");
 var contactLink = document.createElement("p");
 var communityPolicyLink = document.createElement("p");
 var privacyPolicyLink = document.createElement("p");
 
 // Create anchor elements and set their attributes
+var aboutAnchor = document.createElement("a");
+aboutAnchor.href = ptype + "://" + domain + "/about";
+aboutAnchor.textContent = "about";
+aboutLink.appendChild(aboutAnchor);
+
 var contactAnchor = document.createElement("a");
 contactAnchor.href = ptype + "://" + domain + "/contact";
 contactAnchor.textContent = "contact";
@@ -72,6 +78,7 @@ privacyPolicyAnchor.textContent = "privacy policy";
 privacyPolicyLink.appendChild(privacyPolicyAnchor);
 
 // Append paragraphs to the existing "fd" container
+fd.appendChild(aboutLink);
 fd.appendChild(contactLink);
 fd.appendChild(communityPolicyLink);
 fd.appendChild(privacyPolicyLink);
