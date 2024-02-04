@@ -71,3 +71,19 @@ link.textContent = text;
 listItem.appendChild(link);
 return listItem;
 }
+async function get_github_latest_release_version(owner, repo) {
+try {
+// Fetch the latest release from the GitHub API
+const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`);
+
+if (!response.ok) {
+return `Failed to fetch latest release: ${response.status} ${response.statusText}`;
+}
+
+const data = await response.json();
+const latestVersion = data.tag_name;
+return latestVersion;
+} catch (error) {
+return `Error fetching latest release: ${error}`;
+}
+}

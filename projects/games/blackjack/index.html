@@ -14,11 +14,33 @@
 <p>this game is developed in NGT(New Game Toolkit) and has been opened source on github. you may also contribute on github.</p>
 <p><a href="https://github.com/harrymkt/blackjack-NGT">open on github</a></p>
 
-<h2>manual</h2>
-<p><a href="readme.html">click here to view manual file</a></p>
-
 <h2>download</h2>
-<p><a href="https://github.com/harrymkt/blackjack-ngt/releases/latest/download/blackjack.zip">download(always latest)</a></p>
+<script>
+// Create a paragraph element
+var downloadParagraph = document.createElement("p");
+
+// Create an anchor element
+var downloadLink = document.createElement("a");
+
+// Set the href attribute with the download link
+downloadLink.href = "https://github.com/harrymkt/blackjack-ngt/releases/latest/download/blackjack.zip";
+
+// Set the text content of the anchor element
+get_github_latest_release_version("harrymkt", "blackjack-NGT")
+.then(latestVersion => {
+downloadLink.textContent = "download (always latest) version "+latestVersion;
+})
+.catch(error => {
+downloadLink.textContent = "download (always latest) version undefined";
+});
+
+
+// Append the anchor element to the paragraph element
+downloadParagraph.appendChild(downloadLink);
+
+// Append the paragraph element to the body or any other target element
+document.body.appendChild(downloadParagraph);
+</script>
 <p><a href="https://github.com/harrymkt/blackjack-NGT">open on github</a></p>
 
 <script>addfooter();</script>
