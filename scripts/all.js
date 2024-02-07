@@ -15,6 +15,11 @@ metaKeywords.setAttribute("name", "keywords");
 metaKeywords.setAttribute("content", "harry, min, khant, blind, social, visually impaired, computer, pc, mobile, android");
 document.head.appendChild(metaKeywords);
 
+var metaggv = document.createElement("meta");
+metaggv.setAttribute("name", "google-site-verification");
+metaggv.setAttribute("content", "aIYKqbdsEsVDNtT5tHZcr8gCXX8fxRRmfjTOggTC95w");
+document.head.appendChild(metaggv);
+
 var birthyear = 2006; //the variable of the year which harry min khant born.
 var ptype="https"; //the protercall type, http/"+ptype+".
 var domain="harrymkt.github.io"; //domain.
