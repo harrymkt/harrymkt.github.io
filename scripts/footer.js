@@ -90,7 +90,7 @@ var footerElement = document.createElement("footer");
 var copyrightParagraph = document.createElement("p");
 
 // Create a copyright text node
-var copyrightText = document.createTextNode("copyright &copy; " + birthyear + "-" + new Date().getFullYear() + ', ');
+var copyrightText = document.createTextNode("copyright \u00A9 " + birthyear + "-" + new Date().getFullYear() + ', ');
 
 // Create an anchor element
 var anchorElement = document.createElement("a");
