@@ -28,7 +28,7 @@ dontMissParagraph.textContent = "Don't let miss anything from me!";
 var keepInTouchLinksList = document.createElement("ul");
 var githubLinkItem = createLinkListItem("https://github.com/harrymkt", "my GitHub");
 var youtubeLinkItem = createLinkListItem("https://youtube.com/@harry_mk", "Subscribe to my YouTube Channel");
-var telegramChannelLinkItem = createLinkListItem("https://t.me/harrymktg", "Telegram Channel");
+var telegramChannelLinkItem = createLinkListItem("https://t.me/harrymktg", "My Telegram Channel");
 keepInTouchLinksList.appendChild(githubLinkItem);
 keepInTouchLinksList.appendChild(youtubeLinkItem);
 keepInTouchLinksList.appendChild(telegramChannelLinkItem);

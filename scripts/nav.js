@@ -137,12 +137,12 @@ else if(m == 1 && dy == 14)
 dt += "happy valentine's day! ";
 else if(m == 3 && (dy >= 12 && dy <= 16))
 dt += "happy thingyan to myanmar people!";
-if(d == 23 || (d >= 0 && d < 6))
+if(d >= 20 || (d >= 0 && d < 6))
 dt += "wow, thanks for visiting over sleep time!";
 else if(d >= 6 && d < 11)
-dt += "good morning visiter, thanks for visiting to our website! hope you have good time!";
+dt += "good morning visiter, thanks for visiting to my website!";
 else if(d >= 11 && d < 16)
-dt += "good afternoon, thank you for visiting to our website!";
+dt += "good afternoon, thank you for visiting to my website!";
 else
 dt += "good evening visiter, have a nice day!";
 document.getElementById("greetings").textContent = dt;
