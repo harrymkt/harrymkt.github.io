@@ -20,7 +20,7 @@
 <legend>time format</legend>
 <h2>time format</h2>
 <p id="timeformat"></p>
-<label name="labeltf">choose time format</label>
+<label for="timeformatinp">choose time format</label>
 <select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" value="choose">
 <option value="">select format</option>
 <option select value="12">12 hour</option>
@@ -31,12 +31,13 @@
 <legend>visiter name for the site</legend>
 <h2>visiter name</h2>
 <p id="visitname"></p>
-<input id="visitnameinp" type="text" placeholder="enter your name to use">
+<label for="visitnameinp">enter your name that will be used on the site</label>
+<input id="visitnameinp" type="text" placeholder="enter your name to use"></input>
 </fieldset>
 
 <input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input>
 <fieldset>
-<legend>reset config</legend>
+<legend><h2>reset config</h2></legend>
 <input type="button" onclick="removeallcf();" placeholder="remove all configs" value="remove all config"></input>
 </fieldset>
 </form>
@@ -53,12 +54,14 @@ document.getElementById("visitname").textContent="current name, "+vu;
 startform();
 function formsub()
 {
+let o=0;
 var tf=document.getElementById("timeformatinp").value;
 if(tf!==null && tf!=="")
 {
 if(tf!=="12") tf="24";
 localStorage.setItem("timeformat",tf);
 document.getElementById("timeformat").textContent="current time format, "+tf+" hour format";
+o++;
 }
 var vu=document.getElementById("visitnameinp").value;
 if(vu!==null && vu!=="")
@@ -66,19 +69,17 @@ if(vu!==null && vu!=="")
 if(vu==="" || vu==null) vu="visiter";
 localStorage.setItem("visitname",vu);
 document.getElementById("visitname").textContent="current name, "+vu;
+o++
 }
+var msg=(o>0?o+" options saved":"options unchanged");
+alert(msg);
 }//end.function
 function removeallcf()
 {
-const o=[
-"timeformat",
-"visitname"
-];
-for(var i=0;i<o.length;i++)
-{
-localStorage.removeItem(o[i]);
-}
+localStorage.clear();
 startform();
+var msg="complete";
+alert(msg);
 }
 addfooter();
 </script>
