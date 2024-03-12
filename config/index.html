@@ -17,10 +17,12 @@
 <h2>time format</h2>
 <p id="timeformat"></p>
 <form>
-<select id="timeformatinp" placeholder="choose time format" label="choose time format" required>
+<label name="labeltf">choose time format</label>
+<select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" required value="choose">
 <option checked="false" value="12">12 hour</option>
 <option checked="false" value="24">24 hour</option>
 </select>
+
 <input type="submit" onclick="formsub();" placeholder="submit"></input>
 </form>
 <script>
