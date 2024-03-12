@@ -58,22 +58,22 @@ var privacyPolicyLink = document.createElement("p");
 
 // Create anchor elements and set their attributes
 var aboutAnchor = document.createElement("a");
-aboutAnchor.href = ptype + "://" + domain + "/about";
+aboutAnchor.href = "/about";
 aboutAnchor.textContent = "about";
 aboutLink.appendChild(aboutAnchor);
 
 var contactAnchor = document.createElement("a");
-contactAnchor.href = ptype + "://" + domain + "/contact";
+contactAnchor.href = "/contact";
 contactAnchor.textContent = "contact";
 contactLink.appendChild(contactAnchor);
 
 var communityPolicyAnchor = document.createElement("a");
-communityPolicyAnchor.href = ptype + "://" + domain + "/community_policy";
+communityPolicyAnchor.href = "/community_policy";
 communityPolicyAnchor.textContent = "community policy";
 communityPolicyLink.appendChild(communityPolicyAnchor);
 
 var privacyPolicyAnchor = document.createElement("a");
-privacyPolicyAnchor.href = ptype + "://" + domain + "/privacy";
+privacyPolicyAnchor.href = "/privacy";
 privacyPolicyAnchor.textContent = "privacy policy";
 privacyPolicyLink.appendChild(privacyPolicyAnchor);
 
@@ -94,7 +94,7 @@ var copyrightText = document.createTextNode("copyright \u00A9 " + birthyear + "-
 
 // Create an anchor element
 var anchorElement = document.createElement("a");
-anchorElement.href = ptype + "://" + domain;
+anchorElement.href = "/";
 anchorElement.textContent = "harry min khant.";
 
 // Append the copyright text and anchor element to the paragraph

@@ -14,27 +14,71 @@
 <body>
 <script>navstart();</script>
 <h1 id="mainc">site config</h1>
+
+<form>
+<fieldset>
+<legend>time format</legend>
 <h2>time format</h2>
 <p id="timeformat"></p>
-<form>
 <label name="labeltf">choose time format</label>
-<select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" required value="choose">
-<option checked="false" value="12">12 hour</option>
-<option checked="false" value="24">24 hour</option>
+<select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" value="choose">
+<option value="">select format</option>
+<option select value="12">12 hour</option>
+<option select value="24">24 hour</option>
 </select>
+</fieldset>
+<fieldset>
+<legend>visiter name for the site</legend>
+<h2>visiter name</h2>
+<p id="visitname"></p>
+<input id="visitnameinp" type="text" placeholder="enter your name to use">
+</fieldset>
 
-<input type="submit" onclick="formsub();" placeholder="submit"></input>
+<input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input>
+<fieldset>
+<legend>reset config</legend>
+<input type="button" onclick="removeallcf();" placeholder="remove all configs" value="remove all config"></input>
+</fieldset>
 </form>
 <script>
+function startform()
+{
 var tf=localStorage.getItem("timeformat");
 if(tf!=="12") tf="24";
 document.getElementById("timeformat").textContent="current time format, "+tf+" hour format";
+var vu=localStorage.getItem("visitname");
+if(vu==="" || vu===null) vu="visiter";
+document.getElementById("visitname").textContent="current name, "+vu;
+}
+startform();
 function formsub()
 {
 var tf=document.getElementById("timeformatinp").value;
+if(tf!==null && tf!=="")
+{
 if(tf!=="12") tf="24";
 localStorage.setItem("timeformat",tf);
 document.getElementById("timeformat").textContent="current time format, "+tf+" hour format";
+}
+var vu=document.getElementById("visitnameinp").value;
+if(vu!==null && vu!=="")
+{
+if(vu==="" || vu==null) vu="visiter";
+localStorage.setItem("visitname",vu);
+document.getElementById("visitname").textContent="current name, "+vu;
+}
+}//end.function
+function removeallcf()
+{
+const o=[
+"timeformat",
+"visitname"
+];
+for(var i=0;i<o.length;i++)
+{
+localStorage.removeItem(o[i]);
+}
+startform();
 }
 addfooter();
 </script>

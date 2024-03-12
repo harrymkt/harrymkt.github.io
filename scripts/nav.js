@@ -60,14 +60,14 @@ document.body.appendChild(navigationElement);
 
 // Define pages array
 var pages = [
-{ name: "Home", url: "" + ptype + "://" + window.location.hostname + "/", accesskey: "h" },
-{ name: "Projects", url: "" + ptype + "://" + window.location.hostname + "/projects/", accesskey: "p" },
-{ name: "Useful communities", url: "" + ptype + "://" + window.location.hostname + "/community", accesskey: "" },
+{ name: "Home", url: "/", accesskey: "h" },
+{ name: "Projects", url: "/projects/", accesskey: "p" },
+{ name: "Useful communities", url: "/community", accesskey: "" },
 { name: "blog", url: "https://hblog.rf.gd", accesskey: "b" }
 ];
 
 // Get the current URL
-var current_url = window.location.href;
+var current_url = window.location.pathname;
 
 // Loop through the pages array
 for (var i = 0; i < pages.length; i++) {
@@ -77,15 +77,15 @@ var link_text = page.name;
 var onclick_attr = "";
 
 // Normalize the URLs for comparison
-var currentUrlObj = new URL(current_url);
-var pageUrlObj = new URL(page.url);
+//var currentUrlObj = new URL(current_url);
+//var pageUrlObj = new URL(page.url);
 
 // Normalize the paths for comparison (remove trailing slashes)
-var currentPath = currentUrlObj.pathname.replace(/\/$/, "");
-var pagePath = pageUrlObj.pathname.replace(/\/$/, "");
+var currentPath = current_url.replace(/\/$/, "");
+var pagePath = page.url.replace(/\/$/, "");
 
 // Check if the hosts and normalized paths match
-if (currentUrlObj.host === pageUrlObj.host && currentPath === pagePath) {
+if (currentPath === pagePath) {
 class_name = "active";
 link_text = page.name + " (current page)";
 onclick_attr = "event.preventDefault();";
@@ -143,12 +143,12 @@ dt += "happy valentine's day! ";
 else if(m == 3 && (dy >= 12 && dy <= 16))
 dt += "happy thingyan to myanmar people!";
 if(d >= 20 || (d >= 0 && d < 6))
-dt += "wow, thanks for visiting over sleep time!";
+dt += "wow, thank you "+get_storage("visitname","visiter")+" for visiting over sleep time!";
 else if(d >= 6 && d < 11)
-dt += "good morning visiter, thanks for visiting to my website!";
+dt += "good morning "+get_storage("visitname","visiter")+", thanks for visiting to my website!";
 else if(d >= 11 && d < 16)
-dt += "good afternoon, thank you for visiting to my website!";
+dt += "good afternoon "+get_storage("visitname","visiter")+", thank you for visiting to my website!";
 else
-dt += "good evening visiter, have a nice day!";
+dt += "good evening "+get_storage("visitname","visiter")+", have a nice day!";
 document.getElementById("greetings").textContent = dt;
 }

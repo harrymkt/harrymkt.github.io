@@ -87,3 +87,9 @@ return latestVersion;
 return `Error fetching latest release: ${error}`;
 }
 }
+function get_storage(value, otherwise="undefined")
+{
+var n=localStorage.getItem(value);
+if(n==="" || n==="undefined" || n===null) n=otherwise;
+return n;
+}
