@@ -4,7 +4,7 @@ function addfooter()
 // Assuming "fdd" is a reference to an existing DOM object
 var fdd = document.createElement("div");
 fdd.className = "beforefooter";
-
+fdd.id="footersection";
 // "come to me" section
 var comeToMeHeading = document.createElement("h1");
 comeToMeHeading.textContent = "come to me";
