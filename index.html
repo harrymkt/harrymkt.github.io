@@ -16,11 +16,8 @@
 <script>navstart();</script>
 <div class="container">
 <h1 id="mainc">welcome</h1>
-<script>
-var wp=document.createElement("p");
-wp.textContent="hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I hope my website will give you useful contents and creativities. have a look around!";
-document.body.appendChild(wp);
-</script>
+<p id="welcome"></p>
+<script>document.getElementById("welcome").textContent="hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I hope my website will give you useful contents and creativities. have a look around!";</script>
 <p>the navigation menu is located at the top. the footer section is located below. in the footer you'll found some links, including to my social profiles and other useful links.</p>
 
 </div>

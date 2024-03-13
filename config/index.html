@@ -14,11 +14,12 @@
 <body>
 <script>navstart();</script>
 <h1 id="mainc">site config</h1>
+<p>here you can change the preferences for the site.</p>
 
 <form>
 <fieldset>
-<legend>time format</legend>
-<h2>time format</h2>
+<legend><h2>time format</h2></legend>
+<p>the time format is the format that will be used to display the date and time as you can find at the top of any page.</p>
 <p id="timeformat"></p>
 <label for="timeformatinp">choose time format</label>
 <select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" value="choose">
@@ -28,8 +29,8 @@
 </select>
 </fieldset>
 <fieldset>
-<legend>visiter name for the site</legend>
-<h2>visiter name</h2>
+<legend><h2>visiter name for the site</h2></legend>
+<p>the visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
 <p id="visitname"></p>
 <label for="visitnameinp">enter your name that will be used on the site</label>
 <input id="visitnameinp" type="text" placeholder="enter your name to use"></input>
@@ -76,6 +77,11 @@ alert(msg);
 }//end.function
 function removeallcf()
 {
+if(!confirm("are you sure you want to remove all data saved on this site? this cannot be undone"))
+{
+alert("removal canceled");
+return;
+}
 localStorage.clear();
 startform();
 var msg="complete";
