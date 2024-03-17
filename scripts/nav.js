@@ -67,8 +67,7 @@ document.body.appendChild(navigationElement);
 var pages = [
 { name: "Home", url: "/", accesskey: "h" },
 { name: "Projects", url: "/projects/", accesskey: "p" },
-{ name: "Useful communities", url: "/community", accesskey: "" },
-{ name: "blog", url: "https://hblog.rf.gd", accesskey: "b" }
+{ name: "Useful communities", url: "/community", accesskey: "" }
 ];
 
 // Get the current URL
