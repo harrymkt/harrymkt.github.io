@@ -76,12 +76,19 @@ var privacyPolicyAnchor = document.createElement("a");
 privacyPolicyAnchor.href = "/privacy";
 privacyPolicyAnchor.textContent = "privacy policy";
 privacyPolicyLink.appendChild(privacyPolicyAnchor);
+var accpar=document.createElement("p");
+var acclink=document.createElement("a");
+acclink.href="/accessibility";
+acclink.title="learn more about the accessibility of the site!";
+acclink.textContent="accessibility";
+accpar.appendChild(acclink);
 
 // Append paragraphs to the existing "fd" container
 fd.appendChild(aboutLink);
 fd.appendChild(contactLink);
 fd.appendChild(communityPolicyLink);
 fd.appendChild(privacyPolicyLink);
+fd.appendChild(accpar);
 document.body.appendChild(fd);
 // Create a footer element
 var footerElement = document.createElement("footer");
