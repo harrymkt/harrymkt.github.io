@@ -30,7 +30,8 @@ else
 document.getElementById(aria).innerHTML="error";
 }//error
 }//end
-function ts_to_readable_time(timestamp, showsecond = false, ltext = '') {
+function ts_to_readable_time(timestamp, showsecond = false, ltext = '')
+{
 var seconds = Math.floor(Date.now() / 1000) - timestamp;
 var minutes = Math.floor(seconds / 60);
 var hours = Math.floor(minutes / 60);
@@ -87,7 +88,8 @@ output += ltext;
 
 return output;
 }
-function createLinkListItem(href, text) {
+function createLinkListItem(href, text)
+{
 var listItem = document.createElement("li");
 var link = document.createElement("a");
 link.target = "_blank";
@@ -96,19 +98,24 @@ link.textContent = text;
 listItem.appendChild(link);
 return listItem;
 }
-async function get_github_latest_release_version(owner, repo) {
-try {
+async function get_github_latest_release_version(owner, repo)
+{
+try
+{
 // Fetch the latest release from the GitHub API
 const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`);
 
-if (!response.ok) {
+if (!response.ok)
+{
 return `Failed to fetch latest release: ${response.status} ${response.statusText}`;
 }
 
 const data = await response.json();
 const latestVersion = data.tag_name;
 return latestVersion;
-} catch (error) {
+}
+catch (error)
+{
 return `Error fetching latest release: ${error}`;
 }
 }

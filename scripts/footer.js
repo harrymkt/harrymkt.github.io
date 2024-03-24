@@ -6,6 +6,8 @@ var fdd = document.createElement("div");
 fdd.className = "beforefooter";
 fdd.id="footersection";
 // "come to me" section
+var ctmdiv=document.createElement("div");
+ctmdiv.id="cometome";
 var comeToMeHeading = document.createElement("h1");
 comeToMeHeading.textContent = "come to me";
 
@@ -17,6 +19,9 @@ var facebookLinkItem = createLinkListItem("https://www.facebook.com/profile.php?
 var telegramLinkItem = createLinkListItem("https://t.me/harrymkt", "Message on Telegram");
 messageLinksList.appendChild(facebookLinkItem);
 messageLinksList.appendChild(telegramLinkItem);
+ctmdiv.appendChild(comeToMeHeading);
+ctmdiv.appendChild(messageParagraph);
+ctmdiv.appendChild(messageLinksList);
 
 // "keep in touch with Me" section
 var keepInTouchHeading = document.createElement("h1");
@@ -38,9 +43,7 @@ var usefulLinksHeading = document.createElement("h1");
 usefulLinksHeading.textContent = "useful links";
 
 // Appending all elements to "fdd"
-fdd.appendChild(comeToMeHeading);
-fdd.appendChild(messageParagraph);
-fdd.appendChild(messageLinksList);
+fdd.appendChild(ctmdiv);
 fdd.appendChild(keepInTouchHeading);
 fdd.appendChild(dontMissParagraph);
 fdd.appendChild(keepInTouchLinksList);

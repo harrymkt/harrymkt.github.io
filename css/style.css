@@ -17,7 +17,6 @@ height: auto;
 overflow: visible;
 z-index: 1;
 }
-
 body
 {
 background-color: #fff; /* white */
@@ -26,19 +25,23 @@ height: auto;
 }
 #mainc
 {
-background-color: blue;
+background-color: Blue;
 width: auto;
 height: auto;
 }
 footer
 {
-color: white;
+color: White;
 width: 250px;
 height: 250px;
 }
 .beforefooter
 {
-color: blue;
+color: Blue;
 width: auto;
 height: auto;
+}
+#cometome
+{
+color: Gold;
 }
