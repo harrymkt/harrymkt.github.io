@@ -2,29 +2,29 @@ function navstart()
 {
 var confg=document.createElement("a");
 confg.href="/config";
-confg.title="make the site as per your preferences!";
-confg.textContent="config site";
+confg.title="Make the site as per your preferences!";
+confg.textContent="Config site";
 document.body.appendChild(confg);
 // Create h1 element with id "accessibility"
 var h1Element = document.createElement("h1");
 h1Element.id = "accessibility";
-h1Element.textContent = "accessibility links";
+h1Element.textContent = "Accessibility links";
 
 // Create first anchor element
 var skipToMainContentLink = document.createElement("a");
 skipToMainContentLink.href = "#mainc";
 skipToMainContentLink.className = "skip-link";
-skipToMainContentLink.textContent = "skip to main content";
+skipToMainContentLink.textContent = "Skip to main content";
 
 // Create second anchor element
 var skipToNavigationLink = document.createElement("a");
 skipToNavigationLink.href = "#navigation";
 skipToNavigationLink.className = "skip-link";
-skipToNavigationLink.textContent = "skip to navigation";
+skipToNavigationLink.textContent = "Skip to navigation";
 var skipfooterLink = document.createElement("a");
 skipfooterLink.href = "#footersection";
 skipfooterLink.className = "skip-link";
-skipfooterLink.textContent = "skip to footer";
+skipfooterLink.textContent = "Skip to footer";
 // Append elements to the document body or any other target element
 document.body.appendChild(h1Element);
 document.body.appendChild(skipToMainContentLink);
@@ -43,15 +43,16 @@ document.body.appendChild(fulldateElement);
 document.body.appendChild(greetingsElement);
 displaytime();
 setInterval(displaytime, 1000);
+document.getElementById("ownername").textContent=ownername;
 // Create nav element with id "navigation" and ARIA attributes
 var navigationElement = document.createElement("nav");
 navigationElement.id = "navigation";
 navigationElement.setAttribute("role", "navigation");
-navigationElement.setAttribute("aria-label", "main menu");
+navigationElement.setAttribute("aria-label", "Main menu");
 
 // Create h1 element inside the nav element
 var h1Element = document.createElement("h1");
-h1Element.textContent = "main menu";
+h1Element.textContent = "Main menu";
 
 // Create dl element inside the nav element
 var dlElement = document.createElement("dl");
@@ -140,20 +141,20 @@ var dy = dates.getDate();
 var dt = "";
 var currentage=y-birthyear;
 if(m == 6 && dy == 26)
-dt += "this is harry min khant's " + currentage + " year"+(currentage===1?"":"s")+" birthday. ";
+dt += "This is Harry Min Khant's " + currentage + " year"+(currentage===1?"":"s")+" Birthday. ";
 if((m == 11 && dy == 31) || (m == 0 && dy == 1))
-dt += "happy new year! ";
+dt += "Happy new year! ";
 else if(m == 1 && dy == 14)
-dt += "happy valentine's day! ";
+dt += "Happy valentine's day! ";
 else if(m == 3 && (dy >= 12 && dy <= 16))
-dt += "happy thingyan to myanmar people!";
+dt += "Happy thingyan to myanmar people!";
 if(d >= 20 || (d >= 0 && d < 6))
-dt += "wow, thank you "+get_storage("visitname","visiter")+" for visiting over sleep time!";
+dt += "Wow, thank you "+get_storage("visitname","visiter")+" for visiting over sleep time!";
 else if(d >= 6 && d < 11)
-dt += "good morning "+get_storage("visitname","visiter")+", thanks for visiting to my website!";
+dt += "Good morning "+get_storage("visitname","visiter")+", thanks for visiting to my website!";
 else if(d >= 11 && d < 16)
-dt += "good afternoon "+get_storage("visitname","visiter")+", thank you for visiting to my website!";
+dt += "Good afternoon "+get_storage("visitname","visiter")+", thank you for visiting to my website!";
 else
-dt += "good evening "+get_storage("visitname","visiter")+", have a nice day!";
+dt += "Good evening "+get_storage("visitname","visiter")+", have a nice day!";
 document.getElementById("greetings").textContent = dt;
 }

@@ -10,37 +10,37 @@
 <script src="/scripts/all.js"></script>
 <script src="/scripts/nav.js"></script>
 <script src="/scripts/footer.js"></script>
-<script>sett("site config");</script>
+<script>sett("Site config");</script>
 </head>
 <body>
 <script>navstart();</script>
-<h1 id="mainc">site config</h1>
-<p>here you can change the preferences for the site.</p>
+<h1 id="mainc">Site config</h1>
+<p>Here you can change the preferences for the site.</p>
 
 <form>
 <fieldset>
-<legend><h2>time format</h2></legend>
-<p>the time format is the format that will be used to display the date and time as you can find at the top of any page.</p>
+<legend><h2>Time format</h2></legend>
+<p>The time format is the format that will be used to display the date and time as you can find at the top of any page.</p>
 <p id="timeformat"></p>
-<label for="timeformatinp">choose time format</label>
-<select name="labeltf" id="timeformatinp" placeholder="choose time format" label="choose time format" value="choose">
-<option value="">select format</option>
+<label for="timeformatinp">Choose time format</label>
+<select name="labeltf" id="timeformatinp" placeholder="Choose time format" value="Choose">
+<option value="">Select format</option>
 <option select value="12">12 hour</option>
 <option select value="24">24 hour</option>
 </select>
 </fieldset>
 <fieldset>
-<legend><h2>visiter name for the site</h2></legend>
-<p>the visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
+<legend><h2>Visiter name for the site</h2></legend>
+<p>The visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
 <p id="visitname"></p>
-<label for="visitnameinp">enter your name that will be used on the site</label>
-<input id="visitnameinp" type="text" placeholder="enter your name to use"></input>
+<label for="visitnameinp">Enter your name that will be used on the site</label>
+<input id="visitnameinp" type="text" placeholder="Enter your name to use"></input>
 </fieldset>
 
 <input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input>
 <fieldset>
-<legend><h2>reset config</h2></legend>
-<input type="button" onclick="removeallcf();" placeholder="remove all configs" value="remove all config"></input>
+<legend><h2>Reset config</h2></legend>
+<input type="button" onclick="removeallcf();" placeholder="Remove all configs" value="Remove all config"></input>
 </fieldset>
 </form>
 <script>
@@ -78,14 +78,14 @@ alert(msg);
 }//end.function
 function removeallcf()
 {
-if(!confirm("are you sure you want to remove all data saved on this site? this cannot be undone"))
+if(!confirm("Are you sure you want to remove all data saved on this site? This cannot be undone"))
 {
-alert("removal canceled");
+alert("Removal canceled");
 return;
 }
 localStorage.clear();
 startform();
-var msg="complete";
+var msg="All the site config has been cleared.";
 alert(msg);
 }
 addfooter();

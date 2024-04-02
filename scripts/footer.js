@@ -9,13 +9,13 @@ fdd.id="footersection";
 var ctmdiv=document.createElement("div");
 ctmdiv.id="cometome";
 var comeToMeHeading = document.createElement("h1");
-comeToMeHeading.textContent = "come to me";
+comeToMeHeading.textContent = "Come to me";
 
 var messageParagraph = document.createElement("p");
 messageParagraph.textContent = "If you want to send a message and get in touch with me, check out below.";
 
 var messageLinksList = document.createElement("ul");
-var facebookLinkItem = createLinkListItem("https://www.facebook.com/profile.php?id=61555081142615", "add friend / follow on Facebook");
+var facebookLinkItem = createLinkListItem("https://www.facebook.com/profile.php?id=61555081142615", "Add friend / follow on Facebook");
 var telegramLinkItem = createLinkListItem("https://t.me/harrymkt", "Message on Telegram");
 messageLinksList.appendChild(facebookLinkItem);
 messageLinksList.appendChild(telegramLinkItem);
@@ -25,13 +25,13 @@ ctmdiv.appendChild(messageLinksList);
 
 // "keep in touch with Me" section
 var keepInTouchHeading = document.createElement("h1");
-keepInTouchHeading.textContent = "keep in touch with Me";
+keepInTouchHeading.textContent = "Keep in touch with Me";
 
 var dontMissParagraph = document.createElement("p");
 dontMissParagraph.textContent = "Don't let miss anything from me!";
 
 var keepInTouchLinksList = document.createElement("ul");
-var githubLinkItem = createLinkListItem("https://github.com/harrymkt", "my GitHub");
+var githubLinkItem = createLinkListItem("https://github.com/harrymkt", "My GitHub");
 var youtubeLinkItem = createLinkListItem("https://youtube.com/@harry_mk", "Subscribe to my YouTube Channel");
 var telegramChannelLinkItem = createLinkListItem("https://t.me/harrymktg", "My Telegram Channel");
 keepInTouchLinksList.appendChild(githubLinkItem);
@@ -40,7 +40,7 @@ keepInTouchLinksList.appendChild(telegramChannelLinkItem);
 
 // "useful links" section
 var usefulLinksHeading = document.createElement("h1");
-usefulLinksHeading.textContent = "useful links";
+usefulLinksHeading.textContent = "Useful links";
 
 // Appending all elements to "fdd"
 fdd.appendChild(ctmdiv);
@@ -62,28 +62,28 @@ var privacyPolicyLink = document.createElement("p");
 // Create anchor elements and set their attributes
 var aboutAnchor = document.createElement("a");
 aboutAnchor.href = "/about";
-aboutAnchor.textContent = "about";
+aboutAnchor.textContent = "About me";
 aboutLink.appendChild(aboutAnchor);
 
 var contactAnchor = document.createElement("a");
 contactAnchor.href = "/contact";
-contactAnchor.textContent = "contact";
+contactAnchor.textContent = "Contact me";
 contactLink.appendChild(contactAnchor);
 
 var communityPolicyAnchor = document.createElement("a");
 communityPolicyAnchor.href = "/community_policy";
-communityPolicyAnchor.textContent = "community policy";
+communityPolicyAnchor.textContent = "Community Policy";
 communityPolicyLink.appendChild(communityPolicyAnchor);
 
 var privacyPolicyAnchor = document.createElement("a");
 privacyPolicyAnchor.href = "/privacy";
-privacyPolicyAnchor.textContent = "privacy policy";
+privacyPolicyAnchor.textContent = "Privacy Policy";
 privacyPolicyLink.appendChild(privacyPolicyAnchor);
 var accpar=document.createElement("p");
 var acclink=document.createElement("a");
 acclink.href="/accessibility";
-acclink.title="learn more about the accessibility of the site!";
-acclink.textContent="accessibility";
+acclink.title="Learn more about the accessibility of the site!";
+acclink.textContent="Accessibility";
 accpar.appendChild(acclink);
 
 // Append paragraphs to the existing "fd" container
@@ -100,12 +100,12 @@ var footerElement = document.createElement("footer");
 var copyrightParagraph = document.createElement("p");
 
 // Create a copyright text node
-var copyrightText = document.createTextNode("copyright \u00A9 " + birthyear + "-" + new Date().getFullYear() + ', ');
+var copyrightText = document.createTextNode("Copyright \u00A9 " + birthyear + "-" + new Date().getFullYear() + ', ');
 
 // Create an anchor element
 var anchorElement = document.createElement("a");
 anchorElement.href = "/";
-anchorElement.textContent = "harry min khant.";
+anchorElement.textContent = "Harry Min Khant.";
 
 // Append the copyright text and anchor element to the paragraph
 copyrightParagraph.appendChild(copyrightText);
