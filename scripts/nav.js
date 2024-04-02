@@ -156,5 +156,9 @@ dt += "Good afternoon "+get_storage("visitname","visiter")+", thank you for visi
 else
 dt += "Good evening "+get_storage("visitname","visiter")+", have a nice day!";
 document.getElementById("greetings").textContent = dt;
-document.getElementById("ownername").textContent=ownername;
+var ownernameElement = document.getElementById("ownername");
+if (ownernameElement)
+{
+ownernameElement.textContent = ownername;
 }
+}//end of nav
