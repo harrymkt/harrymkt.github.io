@@ -43,7 +43,6 @@ document.body.appendChild(fulldateElement);
 document.body.appendChild(greetingsElement);
 displaytime();
 setInterval(displaytime, 1000);
-document.getElementById("ownername").textContent=ownername;
 // Create nav element with id "navigation" and ARIA attributes
 var navigationElement = document.createElement("nav");
 navigationElement.id = "navigation";
@@ -158,3 +157,4 @@ else
 dt += "Good evening "+get_storage("visitname","visiter")+", have a nice day!";
 document.getElementById("greetings").textContent = dt;
 }
+document.getElementById("ownername").textContent=ownername;
