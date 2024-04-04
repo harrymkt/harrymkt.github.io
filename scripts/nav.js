@@ -90,7 +90,8 @@ var currentPath = current_url.replace(/\/$/, "");
 var pagePath = page.url.replace(/\/$/, "");
 
 // Check if the hosts and normalized paths match
-if (currentPath === pagePath) {
+if (currentPath === pagePath)
+{
 class_name = "active";
 link_text = page.name + " (current page)";
 onclick_attr = "event.preventDefault();";
@@ -101,7 +102,7 @@ var linkElement = document.createElement('a');
 linkElement.href = page.url;
 linkElement.className = class_name;
 linkElement.onclick = function () { eval(onclick_attr); }; // Avoid using eval if possible
-if (page.accesskey !== "" && page.accesskey !== "undefined") linkElement.accessKey = page.accesskey;
+if (page.accesskey!==null && page.accesskey !== "" && page.accesskey !== "undefined") linkElement.accessKey = page.accesskey;
 linkElement.textContent = link_text;
 
 // Create a list item element (dt in this case)
@@ -140,7 +141,7 @@ var dy = dates.getDate();
 var dt = "";
 var currentage=y-birthyear;
 if(m == 6 && dy == 26)
-dt += "This is Harry Min Khant's " + currentage + " year"+(currentage===1?"":"s")+" Birthday. ";
+dt += "This is <b id=\"ownername\"></b>'s " + currentage + " year"+(currentage===1?"":"s")+" Birthday. ";
 if((m == 11 && dy == 31) || (m == 0 && dy == 1))
 dt += "Happy new year! ";
 else if(m == 1 && dy == 14)

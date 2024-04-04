@@ -41,58 +41,56 @@ var years = Math.floor(months / 12);
 
 var output = '';
 
-if (years > 0) {
+if (years > 0)
+{
 output += years + ' year';
 if (years > 1) output += 's';
 output += ', ';
 }
-
-if (months > 0) {
+if (months > 0)
+{
 output += (months % 12) + ' month';
 if (months % 12 > 1) output += 's';
 output += ', ';
 }
-
-if (days > 0) {
+if (days > 0)
+{
 output += (days % 30) + ' day';
 if (days % 30 > 1) output += 's';
 output += ', ';
 }
-
-if (hours > 0) {
+if (hours > 0)
+{
 output += (hours % 24) + ' hour';
 if (hours % 24 > 1) output += 's';
 output += ', ';
 }
-
-if (minutes > 0) {
+if (minutes > 0)
+{
 output += (minutes % 60) + ' minute';
 if (minutes % 60 > 1) output += 's';
 output += ', ';
 }
-
-if (showsecond || (days == 0 && hours == 0 && minutes == 0)) {
+if (showsecond || (days == 0 && hours == 0 && minutes == 0))
+{
 output += (seconds % 60) + ' second';
 if (seconds % 60 > 1) output += 's';
 output += ', ';
 }
-
 output = output.trim().replace(/,\s*$/, '');
-
-if (output.includes(',')) {
+if (output.includes(','))
+{
 var lastCommaPos = output.lastIndexOf(',');
 output = output.slice(0, lastCommaPos) + ' and' + output.slice(lastCommaPos + 1);
 }
-
 output += ltext;
-
 return output;
 }
-function createLinkListItem(href, text)
+function createLinkListItem(href, text, target="_blank")
 {
 var listItem = document.createElement("li");
 var link = document.createElement("a");
-link.target = "_blank";
+link.target = target;
 link.href = href;
 link.textContent = text;
 listItem.appendChild(link);

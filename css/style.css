@@ -19,29 +19,33 @@ z-index: 1;
 }
 body
 {
-background-color: #fff; /* white */
+color: Blue;
 width: auto;
 height: auto;
 }
 #mainc
 {
-background-color: Blue;
+color: Blue;
 width: auto;
 height: auto;
 }
 footer
 {
-color: White;
+background-color: White;
 width: 250px;
 height: 250px;
 }
 .beforefooter
 {
-color: Blue;
+background-color: White;
 width: auto;
 height: auto;
 }
 #cometome
 {
 color: Gold;
+}
+#ownername
+{
+color: White;
 }
