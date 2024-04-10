@@ -10,11 +10,11 @@
 <script src="/scripts/all.js"></script>
 <script src="/scripts/nav.js"></script>
 <script src="/scripts/footer.js"></script>
-<script>sett("Site config");</script>
+<script>sett("Site configuration");</script>
 </head>
 <body>
 <script>navstart();</script>
-<h1 id="mainc">Site config</h1>
+<h1 id="mainc">Site configuration</h1>
 <p>Here you can change the preferences for the site.</p>
 
 <form>
@@ -48,10 +48,10 @@ function startform()
 {
 var tf=localStorage.getItem("timeformat");
 if(tf!=="12") tf="24";
-document.getElementById("timeformat").textContent="current time format, "+tf+" hour format";
+document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
 var vu=localStorage.getItem("visitname");
 if(vu==="" || vu===null) vu="visiter";
-document.getElementById("visitname").textContent="current name, "+vu;
+document.getElementById("visitname").textContent="Current name, "+vu;
 }
 startform();
 function formsub()
@@ -62,7 +62,7 @@ if(tf!==null && tf!=="")
 {
 if(tf!=="12") tf="24";
 localStorage.setItem("timeformat",tf);
-document.getElementById("timeformat").textContent="current time format, "+tf+" hour format";
+document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
 o++;
 }
 var vu=document.getElementById("visitnameinp").value;
@@ -70,7 +70,7 @@ if(vu!==null && vu!=="")
 {
 if(vu==="" || vu==null) vu="visiter";
 localStorage.setItem("visitname",vu);
-document.getElementById("visitname").textContent="current name, "+vu;
+document.getElementById("visitname").textContent="Current name, "+vu;
 o++
 }
 var msg=(o>0?o+" options saved":"options unchanged");
@@ -85,7 +85,7 @@ return;
 }
 localStorage.clear();
 startform();
-var msg="All the site config has been cleared.";
+var msg="All the site configurations have been cleared.";
 alert(msg);
 }
 addfooter();
