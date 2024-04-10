@@ -2,7 +2,7 @@ function navstart()
 {
 var confg=document.createElement("a");
 confg.href="/config";
-confg.title="Make the site as per your preferences!";
+confg.title="Configure the site as per your preferences!";
 confg.textContent="Config site";
 document.body.appendChild(confg);
 // Create h1 element with id "accessibility"
