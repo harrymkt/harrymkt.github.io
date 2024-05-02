@@ -146,9 +146,7 @@ if((m == 11 && dy == 31) || (m == 0 && dy == 1))
 dt += "Happy new year! ";
 else if(m == 1 && dy == 14)
 dt += "Happy valentine's day! ";
-else if(m == 3 && (dy >= 12 && dy <= 16))
-dt += "Happy thingyan to myanmar people!";
-if(d >= 20 || (d >= 0 && d < 6))
+if(d >= 22 || (d >= 0 && d < 6))
 dt += "Wow, thank you "+get_storage("visitname","visiter")+" for visiting over sleep time!";
 else if(d >= 6 && d < 11)
 dt += "Good morning "+get_storage("visitname","visiter")+", thanks for visiting to my website!";

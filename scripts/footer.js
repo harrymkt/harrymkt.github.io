@@ -1,7 +1,6 @@
 //footer.
 function addfooter()
 {
-// Assuming "fdd" is a reference to an existing DOM object
 var fdd = document.createElement("div");
 fdd.className = "beforefooter";
 fdd.id="footersection";
@@ -22,7 +21,7 @@ messageLinksList.appendChild(telegramLinkItem);
 ctmdiv.appendChild(comeToMeHeading);
 ctmdiv.appendChild(messageParagraph);
 ctmdiv.appendChild(messageLinksList);
-
+fdd.appendChild(ctmdiv);
 // "keep in touch with Me" section
 var keepInTouchHeading = document.createElement("h1");
 keepInTouchHeading.textContent = "Keep in touch with Me";
@@ -43,7 +42,6 @@ var usefulLinksHeading = document.createElement("h1");
 usefulLinksHeading.textContent = "Useful links";
 
 // Appending all elements to "fdd"
-fdd.appendChild(ctmdiv);
 fdd.appendChild(keepInTouchHeading);
 fdd.appendChild(dontMissParagraph);
 fdd.appendChild(keepInTouchLinksList);
@@ -122,4 +120,4 @@ footerElement.appendChild(copyrightParagraph);
 
 // Append the footer to the body or any other target element
 document.body.appendChild(footerElement);
-}//end
+}//End
