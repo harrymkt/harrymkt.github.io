@@ -90,7 +90,7 @@ function createLinkListItem(href, text, target="_blank")
 {
 var listItem = document.createElement("li");
 var link = document.createElement("a");
-link.target = target;
+if(target!=="") link.target = target;
 link.href = href;
 link.textContent = text;
 listItem.appendChild(link);
@@ -122,4 +122,34 @@ function get_storage(value, otherwise="undefined")
 var n=localStorage.getItem(value);
 if(n==="" || n==="undefined" || n===null) n=otherwise;
 return n;
+}
+function round(num, decimals)
+{
+const factor = Math.pow(10, decimals);
+return Math.round(num * factor) / factor;
+}
+function convert_size(size, round_to = 2)
+{
+if (size < 1) return "0 B";
+if (size < 1024)
+{
+return round(size, round_to) + " B";
+}
+size = size / 1024;
+if (size < 1024)
+{
+return round(size, round_to) + " KB";
+}
+size = size / 1024;
+if (size < 1024)
+{
+return round(size, round_to) + " MB";
+}
+size = size / 1024;
+if (size < 1024)
+{
+return round(size, round_to) + " GB";
+}
+size = size / 1024;
+return round(size, round_to) + " TB";
 }
