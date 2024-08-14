@@ -20,7 +20,7 @@
 <form>
 <fieldset>
 <legend><h2>Time format</h2></legend>
-<p>The time format is the format that will be used to display the date and time as you can find at the top of any page.</p>
+<p>The time format is the format that will be used to display the date and time which you can find at the top of any page.</p>
 <p id="timeformat"></p>
 <label for="timeformatinp">Choose time format</label>
 <select name="labeltf" id="timeformatinp" placeholder="Choose time format" value="Choose">
@@ -78,15 +78,13 @@ alert(msg);
 }//end.function
 function removeallcf()
 {
-if(!confirm("Are you sure you want to remove all data saved on this site? This cannot be undone"))
+if(confirm("Are you sure you want to remove all configurations saved on this site? This cannot be undone"))
 {
-alert("Removal canceled");
-return;
-}
 localStorage.clear();
 startform();
 var msg="All the site configurations have been cleared.";
 alert(msg);
+}
 }
 addfooter();
 </script>

@@ -24,7 +24,7 @@ ctmdiv.appendChild(messageLinksList);
 fdd.appendChild(ctmdiv);
 // "keep in touch with Me" section
 var keepInTouchHeading = document.createElement("h1");
-keepInTouchHeading.textContent = "Keep in touch with Me";
+keepInTouchHeading.textContent = "Keep in touch with me";
 
 var dontMissParagraph = document.createElement("p");
 dontMissParagraph.textContent = "Don't let miss anything from me!";
