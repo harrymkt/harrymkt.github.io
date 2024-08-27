@@ -16,9 +16,9 @@ jobs:
           $cobaltUrl = "https://github.com/cobalt-org/cobalt.rs/releases/download/v0.19.6/cobalt-v0.19.6-x86_64-pc-windows-msvc.zip"
           Invoke-WebRequest -Uri $cobaltUrl -OutFile "cobalt.zip"
           Expand-Archive cobalt.zip -DestinationPath "cobalt"
-          echo "##[add-path]$PWD\cobalt"
+          echo "$PWD\cobalt" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
         shell: pwsh
-        
+
       - name: Build the Cobalt site
         run: cobalt build
 
