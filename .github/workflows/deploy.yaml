@@ -22,8 +22,11 @@ jobs:
       - name: Build the Cobalt site
         run: cobalt build
 
+      - name: List files in HTML directory
+        run: dir HTML
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./HTML
+          publish_dir: /HTML
