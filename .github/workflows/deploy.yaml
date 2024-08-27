@@ -11,20 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-
       - name: Download and install Cobalt
         run: |
           $cobaltUrl = "https://github.com/cobalt-org/cobalt.rs/releases/download/v0.19.6/cobalt-v0.19.6-x86_64-pc-windows-msvc.zip"
           Invoke-WebRequest -Uri $cobaltUrl -OutFile "cobalt.zip"
           Expand-Archive cobalt.zip -DestinationPath ".\cobalt"
           $env:Path += ";$PWD\cobalt"
-      
-      - run: npm install
-      
-      - run: cobalt build
+
+      - name: Build the Cobalt site
+        run: cobalt build
       
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
