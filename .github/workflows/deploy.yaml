@@ -10,20 +10,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Download and install Cobalt
         run: |
           $cobaltUrl = "https://github.com/cobalt-org/cobalt.rs/releases/download/v0.19.6/cobalt-v0.19.6-x86_64-pc-windows-msvc.zip"
           Invoke-WebRequest -Uri $cobaltUrl -OutFile "cobalt.zip"
-          Expand-Archive cobalt.zip -DestinationPath ".\cobalt"
-        shell: powershell
+          Expand-Archive cobalt.zip -DestinationPath "cobalt"
+          echo "##[add-path]$PWD\cobalt"
+        shell: pwsh
         
-      - name: Add Cobalt to Path
-        run: echo "::add-path::$(System.DefaultWorkingDirectory)\cobalt"
-      
       - name: Build the Cobalt site
         run: cobalt build
-        
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
