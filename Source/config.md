@@ -1,21 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="author" content="harry min khant">
-<meta name="keywords" content="harry, min, khant, blind, social, visually impaired, computer, pc, mobile, android">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/css/style.css" rel="stylesheet" type="text/css">
-<script src="/scripts/functions.js"></script>
-<script src="/scripts/all.js"></script>
-<script src="/scripts/nav.js"></script>
-<script src="/scripts/footer.js"></script>
-<script>sett("Site configuration");</script>
-</head>
-<body>
-<script>navstart();</script>
-<h1 id="mainc">Site configuration</h1>
-<p>Here you can change the preferences for the site.</p>
+---
+layout: default.liquid
+title: Config
+permalink: /config
+---
+
+# Site configuration</h1>
+Here you can change the preferences for the site.
 
 <form>
 <fieldset>
@@ -86,7 +76,4 @@ var msg="All the site configurations have been cleared.";
 alert(msg);
 }
 }
-addfooter();
 </script>
-</body>
-</html>

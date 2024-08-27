@@ -1,0 +1,13 @@
+source: Source
+destination: HTML
+
+site:
+ title: Harry Min Khant
+ description: Harry Min Khant
+ base_url: https://example.com
+ sitemap: sitemap.xml
+ 
+posts:
+ title: Blog
+ description: Blog
+ dir: blog
