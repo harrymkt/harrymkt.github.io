@@ -4,7 +4,7 @@ destination: HTML
 site:
  title: Harry Min Khant
  description: Harry Min Khant
- base_url: https://example.com
+ base_url: https://harrymkt.github.io
  sitemap: sitemap.xml
  
 posts:

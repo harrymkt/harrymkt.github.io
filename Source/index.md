@@ -4,6 +4,7 @@ title: Home
 permalink: /
 ---
 
+# Welcome
 <p id="welcome">
 <script>document.getElementById("welcome").textContent="Hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I am <b id=\"ownername\"></b>, and I hope my website will give you useful contents and creativities. Have a look around!";</script>
 
