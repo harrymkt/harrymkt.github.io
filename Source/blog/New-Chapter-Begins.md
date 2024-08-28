@@ -6,7 +6,6 @@ is_draft: false
 permalink: /blog/new-chapter-begins
 ---
 
-# A New Chapter Begins
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
 
 On August 24, 2024, at around 09:00 PM GMT+06:30 Asia/Yangon standard time, my computer broke down unexpectedly. After a nerve-wracking wait, the root cause was finally discovered three days later on August 27, 2024, at around 06:00 PM GMT+06:30 Asia/Yangon standard time.
