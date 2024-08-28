@@ -10,7 +10,7 @@ permalink: /blog
 ## posts
 {% for post in collections.posts.pages %}
 ### [{{ post.title }}](/{{ post.permalink }})
-Published on: {{ post.date: "%A, %B %d %Y at %r" }}
+Published on: {{ post.date: "%A, %B %d %Y at %r" }}, GMT+6:30
 
 {{ post.excerpt | strip_html }}
 
