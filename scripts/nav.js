@@ -68,7 +68,7 @@ var pages = [
 { name: "Home", url: "/", accesskey: "h" },
 { name: "Projects", url: "/projects/", accesskey: "p" },
 { name: "Useful communities", url: "/community", accesskey: "" },
-{ name: "Personal blog", url: "https://harrymkt.blogspot.com", accesskey: "b" }
+{ name: "Personal blog", url: "/blog", accesskey: "b" }
 ];
 
 // Get the current URL
