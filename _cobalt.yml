@@ -6,8 +6,13 @@ site:
  description: Harry Min Khant
  base_url: https://harrymkt.github.io
  sitemap: sitemap.xml
- 
+pages:
+ default:
+  permalink: /{{parent}}/{{name}}
+
 posts:
  title: Blog
- description: Blog
+ description: Here I will share my personal posts.
  dir: blog
+ default:
+  permalink: /{{parent}}/{{name}}

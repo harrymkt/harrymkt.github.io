@@ -3,7 +3,6 @@ title: A New Chapter Begins
 published_date: 2024-08-28 16:48:00 +0630
 layout: post.liquid
 is_draft: false
-permalink: /blog/new-chapter-begins
 ---
 
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
