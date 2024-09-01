@@ -2,8 +2,9 @@ name: Deploy Cobalt
 
 on:
   push:
+    paths: [""Source/**", "_cobalt.yml"]
     branches: [main]
-
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: windows-latest
