@@ -2,7 +2,7 @@ name: Deploy Cobalt
 
 on:
   push:
-    paths: [""Source/**", "_cobalt.yml"]
+    paths: ["Source/**", "_cobalt.yml"]
     branches: [main]
   workflow_dispatch:
 jobs:
