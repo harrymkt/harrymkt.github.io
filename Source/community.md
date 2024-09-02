@@ -1,6 +1,6 @@
 ---
 layout: default.liquid
-title: Community
+title: Useful Community
 permalink: /community
 ---
 

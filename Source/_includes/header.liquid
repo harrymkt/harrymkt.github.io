@@ -17,5 +17,27 @@
 {% endif %}
 </head>
 <body>
+<a href="/config">Config site</a>
+<h1>Accessibility links</h1>
+<a href="#mainc" class="skip-link">Skip to main content</a>
+<a href="#navigation" class="skip-link">Skip to navigation</a>
+<a href="#footersection" class="skip-link">Skip to footer</a>
 <script>navstart();</script>
+<nav id="navigation" role="navigation" aria-label="Main menu">
+<h1>Main Menu</h1>
+{%assign permalink="/" | append: page.permalink%}
+<ul style="list-style-type:none;">
+{%if site.data.nav%}
+{%for pn in site.data.nav%}
+{%if pn.url== permalink%}
+<li><a aria-current="page" href="{{pn.url}}">{{pn.name}}</a></li>
+{%else%}
+<li><a href="{{pn.url}}">{{pn.name}}</a></li>
+{%endif%}
+{%endfor%}
+{%else%}
+<p>No navigation page available.</p>
+{%endif%}
+</ul>
+</nav>
 <div id="mainc">

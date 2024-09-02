@@ -1,35 +1,5 @@
 function navstart()
 {
-var confg=document.createElement("a");
-confg.href="/config";
-confg.title="Configure the site as per your preferences!";
-confg.textContent="Config site";
-document.body.appendChild(confg);
-// Create h1 element with id "accessibility"
-var h1Element = document.createElement("h1");
-h1Element.id = "accessibility";
-h1Element.textContent = "Accessibility links";
-
-// Create first anchor element
-var skipToMainContentLink = document.createElement("a");
-skipToMainContentLink.href = "#mainc";
-skipToMainContentLink.className = "skip-link";
-skipToMainContentLink.textContent = "Skip to main content";
-
-// Create second anchor element
-var skipToNavigationLink = document.createElement("a");
-skipToNavigationLink.href = "#navigation";
-skipToNavigationLink.className = "skip-link";
-skipToNavigationLink.textContent = "Skip to navigation";
-var skipfooterLink = document.createElement("a");
-skipfooterLink.href = "#footersection";
-skipfooterLink.className = "skip-link";
-skipfooterLink.textContent = "Skip to footer";
-// Append elements to the document body or any other target element
-document.body.appendChild(h1Element);
-document.body.appendChild(skipToMainContentLink);
-document.body.appendChild(skipToNavigationLink);
-document.body.appendChild(skipfooterLink);
 // Create p element with id "fulldate"
 var fulldateElement = document.createElement("p");
 fulldateElement.id = "fulldate";
@@ -43,77 +13,7 @@ document.body.appendChild(fulldateElement);
 document.body.appendChild(greetingsElement);
 displaytime();
 setInterval(displaytime, 1000);
-// Create nav element with id "navigation" and ARIA attributes
-var navigationElement = document.createElement("nav");
-navigationElement.id = "navigation";
-navigationElement.setAttribute("role", "navigation");
-navigationElement.setAttribute("aria-label", "Main menu");
-
-// Create h1 element inside the nav element
-var h1Element = document.createElement("h1");
-h1Element.textContent = "Main menu";
-
-// Create dl element inside the nav element
-var dlElement = document.createElement("dl");
-
-// Append elements to the nav element
-navigationElement.appendChild(h1Element);
-navigationElement.appendChild(dlElement);
-
-// Append nav element to the document body or any other target element
-document.body.appendChild(navigationElement);
-
-// Define pages array
-var pages = [
-{ name: "Home", url: "/", accesskey: "h" },
-{ name: "Projects", url: "/projects/", accesskey: "p" },
-{ name: "Useful communities", url: "/community", accesskey: "" },
-{ name: "Personal blog", url: "/blog", accesskey: "b" }
-];
-
-// Get the current URL
-var current_url = window.location.pathname;
-
-// Loop through the pages array
-for (var i = 0; i < pages.length; i++) {
-var page = pages[i];
-var class_name = "";
-var link_text = page.name;
-var onclick_attr = "";
-
-// Normalize the URLs for comparison
-//var currentUrlObj = new URL(current_url);
-//var pageUrlObj = new URL(page.url);
-
-// Normalize the paths for comparison (remove trailing slashes)
-var currentPath = current_url.replace(/\/$/, "");
-var pagePath = page.url.replace(/\/$/, "");
-
-// Check if the hosts and normalized paths match
-if (currentPath === pagePath)
-{
-class_name = "active";
-link_text = page.name + " (current page)";
-onclick_attr = "event.preventDefault();";
-}
-
-// Create a link element
-var linkElement = document.createElement('a');
-linkElement.href = page.url;
-linkElement.className = class_name;
-linkElement.onclick = function () { eval(onclick_attr); }; // Avoid using eval if possible
-if (page.accesskey!==null && page.accesskey !== "" && page.accesskey !== "undefined") linkElement.accessKey = page.accesskey;
-linkElement.textContent = link_text;
-
-// Create a list item element (dt in this case)
-var listItemElement = document.createElement('dt');
-listItemElement.appendChild(linkElement);
-
-// Append the list item to the dl element
-dlElement.appendChild(listItemElement);
-}
 }//end
-
 function displaytime()
 {
 //declare a date to display at the top.

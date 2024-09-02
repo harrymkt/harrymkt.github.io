@@ -1,0 +1,8 @@
+- name: "Home"
+  url: "/"
+- name: "Projects"
+  url: "/projects"
+- name: "Useful communities"
+  url: "/community"
+- name: "Blog"
+  url: "/blog"

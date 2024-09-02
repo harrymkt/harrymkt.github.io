@@ -10,6 +10,9 @@ I use the structure of the site clean and accessible as possible, especially wit
 ## Headings
 You can use Headings to navigate around each section. For example, each game is listed on each Heading at my Projects page.
 
+## Lists
+You can use lists to navigate, for example, in navigation menu.
+
 ## Unability
 I am unable to process the colour designs for the site, look and appearances are also included. This is because I can't see the colour, look and appearances do to the blindness.
 
