@@ -28,6 +28,7 @@ I take appropriate measures to protect the personal information I collect from l
 I retain your personal information for as long as necessary to fulfill the purposes for which it was collected, unless a longer retention period is required or permitted by law.
 
 You have the right to access, correct, and delete your personal information that I have collected. You may also request that I restrict or limit the processing of your personal information or object to my processing of your personal information. To exercise these rights, please contact me using the information in the contact page that is found in footer.
+
 Some rights can also be customized within the site Configuration section that is found at the very top of any page within the site. Most of things, such as your name for the site, format for time display, are saved in local storage of your browser and it is thus they are not shared.
 
 ## Changes to this Policy
