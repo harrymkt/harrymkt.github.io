@@ -1,0 +1,17 @@
+---
+title: Lunr index
+permalink: /scripts/lunr_docs.json
+---
+{% assign idx = 0 %}
+{% assign post_count = collections.posts.pages | size %}
+[
+{% for post in collections.posts.pages %}
+{% assign idx = idx | plus: 1 %}
+{ 
+"title" : "{{ post.title }}",
+
+"href" : "{{ post.permalink }}",
+"content" : "{{ post.content | strip_html | strip_newlines | replace: "\", "\\" }}"
+}{% if idx < post_count %},{% endif %}
+{% endfor %}
+]

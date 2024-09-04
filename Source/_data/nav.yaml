@@ -6,3 +6,5 @@
   url: "/community"
 - name: "Blog"
   url: "/blog"
+- name: "Useful articles"
+  url: "/articles"

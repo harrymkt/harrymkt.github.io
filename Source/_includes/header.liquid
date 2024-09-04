@@ -17,15 +17,20 @@
 {% endif %}
 </head>
 <body>
+{%assign permalink="/" | append: page.permalink%}
 <a href="/config">Config site</a>
 <h1>Accessibility links</h1>
 <a href="#mainc" class="skip-link">Skip to main content</a>
 <a href="#navigation" class="skip-link">Skip to navigation</a>
 <a href="#footersection" class="skip-link">Skip to footer</a>
+<a href="/search"
+{%if permalink=="/search"%}
+aria-current="page"
+{%endif%}
+>Search</a>
 <script>navstart();</script>
 <nav id="navigation" role="navigation" aria-label="Main menu">
 <h1>Main Menu</h1>
-{%assign permalink="/" | append: page.permalink%}
 <ul style="list-style-type:none;">
 {%if site.data.nav%}
 {%for pn in site.data.nav%}
@@ -40,4 +45,5 @@
 {%endif%}
 </ul>
 </nav>
+<main>
 <div id="mainc">
