@@ -15,7 +15,7 @@ Here I will share my useful posts
 ## posts
 {%for post in paginator.pages%}
 {%assign posttitle=post.title%}
-{%if post.description%}
+{%if post.description and post.description!=""%}
 {%assign posttitle=posttitle | append: " (" | append: post.description | append: ")"%}
 {%endif%}
 ### [{{posttitle}}](/{{post.permalink}})
