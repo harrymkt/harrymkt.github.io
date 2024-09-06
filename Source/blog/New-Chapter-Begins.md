@@ -3,6 +3,7 @@ layout: post.liquid
 title: A New Chapter Begins
 is_draft: false
 published_date: 2024-08-28 16:48:00 +0630
+categories: ["News"]
 ---
 
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
