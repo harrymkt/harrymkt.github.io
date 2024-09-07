@@ -32,7 +32,7 @@ document.getElementById(aria).innerHTML="error";
 }//end
 function ts_to_readable_time(timestamp, showsecond = false, ltext = '')
 {
-var seconds = Math.floor(Date.now() / 1000) - timestamp;
+var seconds = Math.floor(Date.now() / 1000) - Math.floor(timestamp / 1000);
 var minutes = Math.floor(seconds / 60);
 var hours = Math.floor(minutes / 60);
 var days = Math.floor(hours / 24);
@@ -152,4 +152,40 @@ return round(size, round_to) + " GB";
 }
 size = size / 1024;
 return round(size, round_to) + " TB";
+}
+function convertdate(dateString)
+{
+// Convert date string into a valid ISO format (inserting colon in the timezone)
+const validDateString = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
+return validDateString;
+}
+function convertrdate(datestr)
+{
+var r=new Date(datestr);
+if(!r) r=new Date(convertdate(datestr));
+const options = {
+weekday: "long", 
+month: "long", 
+day: "numeric",
+year: "numeric"
+};
+const timeformat=localStorage.getItem("timeformat");
+const toptions = {
+hour: "numeric",
+minute: "numeric",
+second: "numeric",
+hour12: false
+};
+var final=r.toLocaleDateString("EN-US", options) + ", " + r.toLocaleTimeString("EN-US", toptions);
+return final;
+}
+function get_timestamp(dateString) {
+// Convert date string into a valid ISO format (inserting colon in the timezone)
+const validDateString = convertdate(dateString);
+
+// Create a new Date object from the valid date string
+const date = new Date(validDateString);
+
+// Return the timestamp (milliseconds since epoch)
+return date.getTime();
 }
