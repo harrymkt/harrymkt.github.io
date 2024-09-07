@@ -1,4 +1,6 @@
 ---
+data:
+  lastdate: 2024-08-28 16:48:00 +0630
 layout: post.liquid
 title: A New Chapter Begins
 is_draft: false

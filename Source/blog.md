@@ -22,7 +22,7 @@ Here I will share my useful posts
 ### [{{posttitle}}](/{{post.permalink}})
 Author: {{post.data.author}}
 
-Published on: {{post.published_date | date: "%A, %B %d %Y at %r"}}, GMT+6:30
+{%if post.data.lastdate%}Last modified: <script>document.write(ts_to_readable_time(get_timestamp("{{ post.data.lastdate}}"),false," ago"));</script>{%else%}Published on: <script>document.write(convertrdate(convertdate("{{ post.published_date}}")));</script>{%endif%}
 
 {%if post.categories and post.categories.size >0%}
 Categories: {{post.categories | join: "/"}}
