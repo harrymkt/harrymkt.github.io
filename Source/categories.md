@@ -4,16 +4,16 @@ title: Categories
 permalink: /categories
 pagination:
   include: Categories
-  per_page: 1
+  per_page: 5
   permalink_suffix: "./{{num}}/"
   order: Desc
   sort_by: ["published_date"]
 ---
 {%if paginator.index_title%}# Category: {{paginator.index_title}}{%endif%}
 {% if paginator.indexes %}
-# {%if paginator.index_title%}Subc{%else%}C{%endif%}ategories, {{paginator.indexes | size}}
+# {%if paginator.index_title%}Subc{%else%}C{%endif%}ategories, {{paginator.indexes | size}} items
 {% for ptag in paginator.indexes %}
-<a href="/{{ ptag.index_permalink }}/">{{ ptag.index_title | last}} ({{ ptag.total_pages }})</a>
+<a href="/{{ ptag.index_permalink }}/">{{ ptag.index_title | last}} ({{ ptag.total_pages }} posts)</a>
 {% endfor %}
 {%endif%}
 
