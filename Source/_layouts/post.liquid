@@ -1,9 +1,9 @@
 {% include "header.liquid" %}
 <h1>{{ page.title }}</h1>
 <p>Author: {{page.data.author}}</p>
-{%if page.data.lastdate%}<p>Updated on: <script>document.write(convertrdate(convertdate("{{ page.data.lastdate}}")));</script></p>{%endif%}
-<p>Published on: <script>document.write(convertrdate(convertdate("{{ page.published_date}}")));</script></p>
-{%if page.categories and page.categories!=""%}
+{%if page.data.lastdate%}<p>Updated on: <script>document.write(local_datetime_string("{{ page.data.lastdate}}"));</script></p>{%endif%}
+<p>Published on: <script>document.write(local_datetime_string("{{ page.published_date}}"));</script></p>
+{%if page.categories and page.categories.size>0%}
 <p>Categories: {{page.categories | join: "/"}}</p>
 {%endif%}
 {% assign reading_wpm = 200 %}
