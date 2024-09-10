@@ -22,7 +22,7 @@ Here I will share my useful posts
 ### [{{posttitle}}](/{{post.permalink}})
 Author: {{post.data.author}}
 
-{%if post.data.lastdate%}Last modified: <script>document.write(ts_to_readable_time(get_timestamp("{{ post.data.lastdate}}"),false," ago"));</script>{%else%}Published on: <script>document.write(convertrdate(convertdate("{{ post.published_date}}")));</script>{%endif%}
+{%if post.data.lastdate%}Last modified: <script>document.write(ts_to_readable_time(get_timestamp("{{ post.data.lastdate}}"),false," ago"));</script>{%else%}Published on: <script>document.write(local_datetime_string("{{ post.published_date}}"));</script>{%endif%}
 
 {%if post.categories and post.categories.size >0%}
 Categories: {{post.categories | join: "/"}}
@@ -33,6 +33,8 @@ Categories: {{post.categories | join: "/"}}
 {%endfor%}
 
 {%if paginator.previous_index or paginator.next_index%}
+<nav aria-label="Pagination">
+
 ## Pagination
 {{paginator.index}} / {{paginator.total_indexes}}
 
@@ -51,4 +53,5 @@ Categories: {{post.categories | join: "/"}}
 {%if paginator.next_index%}
 [Last page](/{{paginator.last_index_permalink}})
 {%endif%}
+</nav>
 {%endif%}

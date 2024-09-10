@@ -153,35 +153,36 @@ return round(size, round_to) + " GB";
 size = size / 1024;
 return round(size, round_to) + " TB";
 }
-function convertdate(dateString)
+function normalize_iso_datetime(dateString)
 {
 // Convert date string into a valid ISO format (inserting colon in the timezone)
 const validDateString = dateString.replace(/([+-]\d{2})(\d{2})$/, '$1:$2');
 return validDateString;
 }
-function convertrdate(datestr)
+function local_datetime_string(date_input)
 {
-var r=new Date(datestr);
-if(!r) r=new Date(convertdate(datestr));
+var r=new Date(date_input);
+if (!r) r = new Date(normalize_iso_datetime(date_input));
 const options = {
 weekday: "long", 
 month: "long", 
 day: "numeric",
 year: "numeric"
 };
-const timeformat=localStorage.getItem("timeformat");
 const toptions = {
 hour: "numeric",
 minute: "numeric",
 second: "numeric",
-hour12: false
+hour12: false,
+timeZoneName: "short"
 };
-var final=r.toLocaleDateString("EN-US", options) + ", " + r.toLocaleTimeString("EN-US", toptions);
+var final = r.toLocaleDateString("EN-US", options) + " at " + r.toLocaleTimeString("EN-US", toptions);
 return final;
 }
-function get_timestamp(dateString) {
+function get_timestamp(dateString)
+{
 // Convert date string into a valid ISO format (inserting colon in the timezone)
-const validDateString = convertdate(dateString);
+const validDateString = normalize_iso_datetime(dateString);
 
 // Create a new Date object from the valid date string
 const date = new Date(validDateString);

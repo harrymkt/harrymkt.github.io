@@ -13,7 +13,10 @@
 {% if page.published_date%}
 <title>{{ page.title }} - {{ collections.posts.title }} - {{ site.title }}</title>
 {% else %}
-<title>{{ page.title }} - {{ site.title }}</title>
+{% capture page_title %}
+{{page.title}}{%if paginator and paginator.index>1%} (page {{paginator.index}}){%endif%} - {{site.title}}
+{%endcapture%}
+<title>{{page_title}}</title>
 {% endif %}
 </head>
 <body>
