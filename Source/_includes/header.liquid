@@ -10,17 +10,17 @@
 <script src="/scripts/all.js"></script>
 <script src="/scripts/nav.js"></script>
 <script src="/scripts/footer.js"></script>
-{% if page.published_date%}
+{% if page.published_date-%}
 <title>{{ page.title }} - {{ collections.posts.title }} - {{ site.title }}</title>
-{% else %}
-{% capture page_title %}
+{%- else -%}
+{%- capture page_title -%}
 {{page.title}}{%if paginator and paginator.index>1%} (page {{paginator.index}}){%endif%} - {{site.title}}
-{%endcapture%}
+{%-endcapture-%}
 <title>{{page_title}}</title>
-{% endif %}
+{%- endif %}
 </head>
 <body>
-{%assign permalink="/" | append: page.permalink%}
+{%assign permalink="/" | append: page.permalink-%}
 <a href="/config">Config site</a>
 <h1>Accessibility links</h1>
 <a href="#mainc" class="skip-link">Skip to main content</a>
@@ -30,13 +30,13 @@
 <nav id="navigation" role="navigation" aria-label="Main menu">
 <h1>Main Menu</h1>
 <ul style="list-style-type:none;">
-{%if site.data.nav%}
-{%for pn in site.data.nav%}
+{%-if site.data.nav-%}
+{%-for pn in site.data.nav%}
 <li><a {%if pn.url==permalink%}aria-current="page"{%endif%}href="{{pn.url}}">{{pn.name}}</a></li>
-{%endfor%}
-{%else%}
+{%-endfor-%}
+{%-else-%}
 <p>No navigation page available.</p>
-{%endif%}
+{%-endif%}
 </ul>
 </nav>
 <main>
