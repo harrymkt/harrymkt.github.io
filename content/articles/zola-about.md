@@ -1,5 +1,6 @@
 +++
 title="All About Zola"
+updated=2024-10-02T22:31:00+06:30
 date=2024-09-26T12:29:00+06:30
 description="A static site generator written in Rust"
 +++
@@ -11,10 +12,10 @@ It is one of the well-known static site generators available today, designed to 
 * No dependencies; Zola comes as a single executable with Sass compilation, syntax highlighting, table of contents and many other features that traditionally require setting up a dev environment or adding some JavaScript libraries to your site.
 * Blazing fast; The average site will be generated in less than a second, including Sass compilation and syntax highlighting.
 * Scalable; Zola renders your whole site as static files, making it trivial to handle any kind of traffic you will throw at it at no cost without having to worry about managing a server or a database.
-* Easy to use; From the CLI to the template engine, everything is designed to be intuitive. Don't take my word for it though, look at the documentation and see for yourself.
+* Easy to use; From the CLI to the template engine, everything is designed to be intuitive. Don't take my word for it though, look at the [documentation](https://getzola.org/documentation) and see for yourself.
 * Flexible; Zola gets out of your way so you can focus on your content, be it a blog, a knowledge base, a landing page or a combination of them.
-* Augmented Markdown; Zola comes with shortcodes and internal links to make it easier to write your content.
-* Theme; Zola's build-in provided theme feature allows you to create your own custom themes, whether to publish on the official themes page, or to share with other users.
+* Augmented Markdown; Zola comes with [shortcodes](https://getzola.org/documentation/content/shortcodes) and [internal links](https://getzola.org/documentation/content/linking) to make it easier to write your content.
+* Theme; Zola's build-in provided [theme](https://getzola.org/documentation/themes/overview) feature allows you to create your own custom themes, whether to publish on the official themes page, or to share with other users. Along with it, the [template](https://getzola.org/documentation/templates/overview) feature allows your theme to let users customize easily using blocks and the ability to extend the templates by having a base template, from which the child templates can be easily extended.
 
 ## Installation
 Zola doesn't need to be installed. Just download an [available release](https://github.com/getzola/zola/releases) and extract the zip.
