@@ -1,8 +1,6 @@
----
-layout: default.liquid
-title: Useful Communities
-permalink: /community
----
++++
+title="Useful Communities"
++++
 
 # Useful communities
 This is a list of useful and helpful communities. |Have a look!

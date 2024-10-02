@@ -1,13 +1,10 @@
----
-layout: default.liquid
-title: Home
-permalink: /
----
++++
+title="Home"
++++
 
 # Welcome
-
-<p id="welcome">
-<script>document.getElementById("welcome").textContent="Hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I am "+ownername+", and I hope my website will give you useful contents and creativities. Have a look around!";</script>
+<p id="welcomep">
+<script>document.getElementById("welcomep").textContent="Hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I am "+ownername+", and I hope my website will give you useful contents and creativities. Have a look around!";</script>
 
 The navigation menu is located at the top. The footer section is located below. In the footer you'll found some links, including to my social profiles and other useful links.
 

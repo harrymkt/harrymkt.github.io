@@ -1,6 +1,5 @@
 @echo off
-title building
-%cobalt% clean
 
-%cobalt% build
+%zola% build
+
 pause

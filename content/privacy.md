@@ -1,16 +1,14 @@
----
-layout: default.liquid
-title: Privacy Policy
-permalink: /privacy
----
++++
+title="Privacy Policy"
++++
 
 # Privacy Policy
 At Harry Min Khant, I am committed to protecting your privacy. This privacy policy explains how I collect, use, and disclose personal information in connection with my technical support services, projects, and other offerings.
 
 Terms used:
 
-* I, me, my : Refers to Harry Min Khant, the owner of this website.
-* You, your : Refers to <script>document.write(get_storage("visitname","visiter"));</script>
+* I, me, my ="Refers to Harry Min Khant, the owner of this website.
+* You, your ="Refers to <script>document.write(get_storage("visitname","visiter"));</script>
 
 ## Collection of Information
 I may collect personal information from you when you interact with me, such as when you contact me for technical support, sign up for my services, or submit feedback or inquiries. The information I collect may include your name, email address, phone number, and other contact information. I may also collect information about your device and operating system to help me diagnose technical issues.

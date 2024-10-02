@@ -1,0 +1,18 @@
+{%-extends "base.html"-%}
+{%-block title-%}{{page.title}}{{config.extra.title_sep}}{{super()}}{%-endblock title-%}
+{%-block content-%}
+{{page.content | safe}}
+{%if page.extra.projects-%}
+{%-for p in page.extra.projects%}
+<h2><a href="{{p.url}}">{{p.name}}</a></h2>
+<p>Type: {{p.type}}.</p>
+
+{%if p.description -%}
+<br>
+<p>{{p.description}}</p>
+{%- endif-%}
+{%-endfor-%}
+{%-else-%}
+<p>There are currently no projects available to show up.</p>
+{%-endif-%}
+{%-endblock content-%}

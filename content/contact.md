@@ -1,8 +1,6 @@
----
-layout: default.liquid
-title: Contact
-permalink: /contact
----
++++
+title="Contact"
++++
 
 # Contact
 You can contact me with the following:

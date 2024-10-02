@@ -1,8 +1,6 @@
----
-layout: default.liquid
-title: Config
-permalink: /config
----
++++
+title="Config"
++++
 
 # Site configuration</h1>
 Here you can change the preferences for the site.

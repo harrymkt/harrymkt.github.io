@@ -1,8 +1,6 @@
----
-layout: default.liquid
-title: About
-permalink: /about
----
++++
+title="About"
++++
 # About me
 
 <script>

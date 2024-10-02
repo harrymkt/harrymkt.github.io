@@ -1,8 +1,7 @@
----
-layout: default.liquid
-title: Community Policy
-permalink: /community_policy
----
++++
+title="Community Policy"
+slug="community_policy"
++++
 
 # Community policy
 If you are in my communities, please follow the below rules.
@@ -56,11 +55,11 @@ Failure to follow this rule will result in a penalty ranging from a one-day ban 
 ## Explaination
 This is a list of explanations of certain parts of the rules and guidelines that I think you may not fully understand:
 
-1. Federation ban : If you get banned from the federation, which is only available on Telegram, you will no longer be able to join any communities located on Telegram that are associated with Harry Min Khant.
-2. Ban : If you get banned, it means that you are no longer allowed to join to the community again.
-3. Warn : If you get warned, it means that you have broke one or more rules, and indicating that you should listen and follow all over the rules
-4. Official language : The language used in the community or the languages that are allowed to use in the community.
-5. Bot : A bot helps to moderate the community, insureing that no unauthorized messages or no messages that aren't allowed to be received.
+1. Federation ban ="If you get banned from the federation, which is only available on Telegram, you will no longer be able to join any communities located on Telegram that are associated with Harry Min Khant.
+2. Ban ="If you get banned, it means that you are no longer allowed to join to the community again.
+3. Warn ="If you get warned, it means that you have broke one or more rules, and indicating that you should listen and follow all over the rules
+4. Official language ="The language used in the community or the languages that are allowed to use in the community.
+5. Bot ="A bot helps to moderate the community, insureing that no unauthorized messages or no messages that aren't allowed to be received.
 
 ## Changes to the community policy
 I may update the community policy from time to time. The updated policies will be instantly affected and posted here.
