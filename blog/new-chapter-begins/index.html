@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="harry min khant">
 <meta name="keywords" content="harry, min, khant, blind, social, visually impaired, computer, pc, mobile, android">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css">
 <script src="/scripts/functions.js"></script>
 <script src="/scripts/all.js"></script>
 <script src="/scripts/nav.js"></script>
@@ -14,81 +14,64 @@
 </head>
 <body>
 <a href="/config">Config site</a>
-<h1>Accessibility links</h1>
+
 <a href="#mainc" class="skip-link">Skip to main content</a>
 <a href="#navigation" class="skip-link">Skip to navigation</a>
-<a href="#footersection" class="skip-link">Skip to footer</a>
+<a href="#zlfooter" class="skip-link">Skip to footer</a>
 <script>navstart();</script>
 <nav id="navigation" role="navigation" aria-label="Main menu">
-<h1>Main Menu</h1>
+<h2>Main menu</h2>
 <ul style="list-style-type:none;">
 <li><a href="/">Home</a></li>
 <li><a href="/projects">Projects</a></li>
-<li><a href="/community">Useful communities</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/articles">Useful articles</a></li>
+<li><a href="/community">Useful Communities</a></li>
+<li><a href="/blog/" title="Read the latest news">Blog</a></li>
+<li><a href="/articles/" title="Read the useful articles!">Useful Articles</a></li>
 </ul>
 </nav>
 <main>
 <div id="mainc">
 <h1>A New Chapter Begins</h1>
-<p>Author: Harry Min Khant</p>
-<p>Updated on: <script>document.write(local_datetime_string("2024-08-28 16:48:00 +0630"));</script></p>
-<p>Published on: <script>document.write(local_datetime_string("2024-08-28 16:48:00 +0630"));</script></p>
-<p>Categories: News</p><p>Reading time: less than a minute.</p>
-<br>
 
+<p>Author: Harry Min Khant</p>
+<p>Published on: <script>document.write(local_datetime_string("2024-08-28T16:48:00"));</script></p>
+<p>Total words: 195</p>
+<p>Reading time: 1 minute</p>
+<br>
 <p>Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.</p>
 <p>On August 24, 2024, at around 09:00 PM GMT+06:30 Asia/Yangon standard time, my computer broke down unexpectedly. After a nerve-wracking wait, the root cause was finally discovered three days later on August 27, 2024, at around 06:00 PM GMT+06:30 Asia/Yangon standard time.</p>
 <p>It turns out that the hard drive had failed, leaving me with no choice but to purchase a new one. My previous drive was an HDD, so I decided to upgrade to a more reliable SSD. Unfortunately, this means that all the data I had accumulated over time is now lost. I’ve sent the old disk for possible repairs, but it remains uncertain whether any of the data can be recovered.</p>
 <p>This situation has brought a lot of unexpected changes. Sadly, all the games I had been enjoying have come to a complete halt. It's disheartening to think about all the progress and memories that might be gone for good.</p>
 <p>But every ending is a new beginning, right? Here's to hoping for better times ahead!</p>
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="harrymkt/harrymkt.github.io"
-        data-repo-id="R_kgDOLG3Hdg"
-        data-category="Comments"
-        data-category-id="DIC_kwDOLG3Hds4Ch_7D"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
 </div>
 </main>
-<aside>
-<div class="beforefooter" id="footersection">
+<div id="zlfooter">
+<aside><div class="beforefooter" id="footersection">
 <div id="cometome">
-<h1>Come to me</h1>
+<h2 id="Come_to_me">Come to me</h2>
 <p>If you want to send a message and get in touch with me, check out below.</p>
 <ul>
 <li><a href="https://facebook.com/harry.mk.64">Add friend / follow on Facebook</a></li>
 <li><a href="https://t.me/harrymkt">Message on Telegram</a></li>
 </ul>
 </div>
-
-<h1>Keep in touch with me</h1>
+<h2 id="Keep_in_touch_with_me">Keep in touch with me</h2>
 <p>Don't let miss anything from me!</p>
 <ul>
 <li><a href="https://github.com/harrymkt">My GitHub</a></li>
 <li><a href="https://youtube.com/@harry_mk">Subscribe to my YouTube Channel</a></li>
 <li><a href="https://t.me/harrymktg">My Telegram Channel</a></li>
 </ul>
-
-<h1>Useful links</h1>
-<p><a href="/about">About me</a></p>
-<p><a href="/contact">Contact me</a></p>
-<p><a href="/community_policy">Community Policy</a></p>
-<p><a href="/privacy">Privacy Policy</a></p>
-<p><a href="/accessibility" title="Learn more about the accessibility of the site!">Accessibility</a></p>
+<h2 id="Useful_links">Useful links</h2>
+<p><a href="/about">About me</a>
+<a href="/contact">Contact me</a>
+<a href="/community_policy">Community Policy</a>
+<a href="/privacy">Privacy Policy</a>
+<a href="/accessibility" title="Learn more about the accessibility of the site!">Accessibility</a></p>
 </div>
 </aside>
 <script>addfooter();</script>
+</div>
+<script src="/scripts/copy.js"></script>
 </body>
 </html>
