@@ -30,7 +30,7 @@ else
 document.getElementById(aria).innerHTML="error";
 }//error
 }//end
-function ts_to_readable_time(timestamp, showsecond = false, ltext = '')
+function ts_to_readable_time(timestamp, showsecond = false, ltext = '', show_full=true)
 {
 var seconds = Math.floor(Date.now() / 1000) - Math.floor(timestamp / 1000);
 var minutes = Math.floor(seconds / 60);
@@ -40,12 +40,12 @@ var months = Math.floor(days / 30);
 var years = Math.floor(months / 12);
 
 var output = '';
-
+if(!show_full)
+{
 if (years > 0)
 {
-output += years + ' year';
-if (years > 1) output += 's';
-output += ', ';
+output += years + " year";
+if (years > 1) output += "s";
 }
 if (months > 0)
 {
@@ -77,6 +77,71 @@ output += (seconds % 60) + ' second';
 if (seconds % 60 > 1) output += 's';
 output += ', ';
 }
+else if (months > 0)
+{
+output += (months % 12) + " month";
+if (months % 12 > 1) output += "s";
+}
+else if (days > 0)
+{
+output += (days % 30) + " day";
+if (days % 30 > 1) output += "s";
+}
+else if (hours > 0)
+{
+output += (hours % 24) + " hour";
+if (hours % 24 > 1) output += "s";
+}
+else if (minutes > 0)
+{
+output += (minutes % 60) + " minute";
+if (minutes % 60 > 1) output += "s";
+}
+else if (seconds>0)
+{
+output += (seconds % 60) + " second";
+if (seconds % 60 > 1) output += "s";
+}
+}//
+else
+{
+if (years > 0)
+{
+output += years + " year";
+if (years > 1) output += "s";
+output += ", ";
+}
+if (months > 0)
+{
+output += (months % 12) + " month";
+if (months % 12 > 1) output += "s";
+output += ", ";
+}
+if (days > 0)
+{
+output += (days % 30) + " day";
+if (days % 30 > 1) output += "s";
+output += ", ";
+}
+if (hours > 0)
+{
+output += (hours % 24) + " hour";
+if (hours % 24 > 1) output += "s";
+output += ", ";
+}
+if (minutes > 0)
+{
+output += (minutes % 60) + " minute";
+if (minutes % 60 > 1) output += "s";
+output += ", ";
+}
+if (showsecond || (days == 0 && hours == 0 && minutes == 0))
+{
+output += (seconds % 60) + " second";
+if (seconds % 60 > 1) output += "s";
+output += ", ";
+}
+}//
 output = output.trim().replace(/,\s*$/, '');
 if (output.includes(','))
 {
