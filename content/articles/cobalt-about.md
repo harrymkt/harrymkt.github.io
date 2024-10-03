@@ -38,7 +38,7 @@ You are now in the Command Prompt window. We will refer to this as the Command P
 
 ### init
 Type the following command in your Command Promt window.
-```
+```bash
 %cobalt% init
 ```
 Output:

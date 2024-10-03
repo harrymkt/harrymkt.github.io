@@ -1,9 +1,12 @@
 +++
 title="Useful Communities"
+updated=2024-10-03T20:50:00+06:30
 +++
 
 # Useful communities
 This is a list of useful and helpful communities. |Have a look!
+
+Last updated: $updated.
 
 ## My own communities
 This is the list that are all owned by me
@@ -16,4 +19,4 @@ This channel shares audio Plugins and Softwares and primarily focused on accessi
 ### The World Of People
 <a href="https://t.me/pworldmbh" target="_blank">Join on Telegram (Opens in a new tab)</a>
 
-This is a chatting group, with 170+ active members. You can talk about everything here.
+This is a chatting group, with 170+ active members at the time of writing on $updated. You can talk about everything here.

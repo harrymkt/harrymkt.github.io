@@ -3,11 +3,13 @@
 {%-block content-%}
 {{page.content | safe}}
 {%if page.extra.projects-%}
+{%-set projectcount=page.extra.projects|length-%}
+<p>There {{projectcount | pluralize(plural="are", singular="is")}} {{projectcount}} project{{projectcount | pluralize}} available</p>
 {%-for p in page.extra.projects%}
-<h2><a href="{{p.url}}">{{p.name}}</a></h2>
+<h2><a href="{{p.url | safe}}">{{p.name}}</a></h2>
 <p>Type: {{p.type}}.</p>
-
-{%if p.description -%}
+{%if p.status%}<p>Status: {{p.status}}</p>{%endif%}
+{%-if p.description%}
 <br>
 <p>{{p.description}}</p>
 {%- endif-%}

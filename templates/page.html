@@ -1,0 +1,8 @@
+{%-extends "base.html"-%}
+{%-block title%}{{page.title}}{{config.extra.title_sep}}{{super()}}{%endblock title-%}
+{%-block content-%}
+{%-set pcontent=page.content|safe-%}
+{%-if page.updated-%}{%-set pcontent=page.content|safe|replace(from="$updated", to="<script>document.write(local_datetime_string('"~page.updated~"'));</script>")-%}{%-endif-%}
+{%-if page.date-%}{%-set pcontent=page.content|safe|replace(from="$date", to="<script>document.write(local_datetime_string('"~page.date~"'));</script>")-%}{%-endif-%}
+{{pcontent|safe}}
+{%-endblock content-%}

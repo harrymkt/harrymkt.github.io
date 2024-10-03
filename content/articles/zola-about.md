@@ -1,6 +1,6 @@
 +++
 title="All About Zola"
-updated=2024-10-02T10:39:00+06:30
+updated=2024-10-03T10:39:00+06:30
 date=2024-10-02T22:00:00+06:30
 description="A static site generator written in Rust"
 +++
