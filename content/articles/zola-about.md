@@ -1,7 +1,7 @@
 +++
 title="All About Zola"
-updated=2024-10-02T22:31:00+06:30
-date=2024-09-26T12:29:00+06:30
+updated=2024-10-02T10:39:00+06:30
+date=2024-10-02T22:00:00+06:30
 description="A static site generator written in Rust"
 +++
 [Zola](https://getzola.org/ "Official website") is a static site generator written in Rust language powered by [Tera](https://keats.github.io/tera/) as its templating engine.
@@ -40,7 +40,7 @@ You are now in the Command Prompt window. We will refer to this as the Command P
 
 ### init
 Type the following command in your Command Promt window.
-```
+```bash
 %zola% init mysite
 ```
 Replace mysite with your site name
@@ -52,3 +52,6 @@ You will be asked a few questions.
 * Do you want to build a search index of the content? [y/N]:
 
 For more information on its usage, please visit the official website above.
+
+## Themes
+Well well well, here is the theme I created if you want to use it for accessibility. [Zluinav](https://github.com/harrymkt/zluinav)
