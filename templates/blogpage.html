@@ -11,7 +11,7 @@
 <p>Total words: {{page.word_count}}</p>
 <p>Reading time: {{page.reading_time}} minute{{page.reading_time | pluralize}}</p>
 <br>
-{{page.content | safe}}
+{{content::process(page=page)}}
 
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"

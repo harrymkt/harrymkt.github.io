@@ -1,20 +1,19 @@
 +++
 title="Privacy Policy"
-updated=2024-10-01T00:00:00+06:30
+updated=2024-10-05T13:00:00+06:30
 +++
-
 # Privacy Policy
 At Harry Min Khant, I am committed to protecting your privacy. This privacy policy explains how I collect, use, and disclose personal information in connection with my technical support services, projects, and other offerings.
 
-Last updated: $updated.
+Last updated: $updated$.
 
 Terms used:
-
-* I, me, my ="Refers to Harry Min Khant, the owner of this website.
-* You, your ="Refers to <script>document.write(get_storage("visitname","visiter"));</script>
+* I, me, my: Refers to Harry Min Khant, the owner of this website.
+* You, your: Refers to <script>document.write(get_storage("visitname","visitor"));</script>
 
 ## Collection of Information
-I may collect personal information from you when you interact with me, such as when you contact me for technical support, sign up for my services, or submit feedback or inquiries. The information I collect may include your name, email address, phone number, and other contact information. I may also collect information about your device and operating system to help me diagnose technical issues.
+I may collect the following personal information:
+* When you visit my website, your IP address is logged by GitHub, whether you have signed in to GitHub or not. This site is hosted on GitHub pages, and their privacy policy explains that the visitor's IP address is logged regardless of that visitor is signed in to GitHub or not.
 
 ## Use of Information
 I use the personal information I collect to provide you with technical support, projects, and other offerings, and to communicate with you regarding my services. I may also use your information to improve my services and offerings, and to personalize your experience.

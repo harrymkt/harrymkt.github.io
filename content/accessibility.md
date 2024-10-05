@@ -1,7 +1,6 @@
 +++
 title="Accessibility"
 +++
-
 # Accessibility
 I use the structure of the site clean and accessible as possible, especially with the visually impaired people. As I am a blind people, I implemented the accessibility of the site to be fully and responsive.
 

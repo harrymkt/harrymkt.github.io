@@ -14,7 +14,6 @@ Here is a list of two free hosting providers that might meet your needs. Please 
 Warning! All contents hosted on GitHub are publically available. You may want to remove private contents before you publish.
 
 If you don't have a domain, GitHub has its subdomain, **username.github.io**, where username is your GitHub username.
-
 * GitHub gives you one main site under your account and unlimited project sites. A project site is a separate website associated with a repository, distinct from folders on the main site. This effectively means that each project site functions as an add-on domain.
 * GitHub provides limited storage of 1 GB for all your sites combined. For example, if you have a main site as well as project sites A, B, and C, and you use 250 MB on the main site, 250 MB on project A, 400 MB on project B, and 100 MB on project C, you would have reached the storage limit. However, don't worry—1 GB is plenty of space for static files. It's a good idea to avoid using large files directly on your site. Instead, you can use external services to host them and include links to those files in your web scripts.
 * GitHub provides limited bandwidth of 100 GB per month.
@@ -32,7 +31,6 @@ Do you love my website? That's it then! It is hosted on GitHub using [Zola](@/ar
 
 ## InfinityFree
 [InfinityFree](https://infinityfree.com/) is another alternative free web hosting provider.
-
 * No ads on your site, but it may display ads on their website and control panel.
 * 99.9% Uptime.
 * You can get 3 websites for free accounts.
@@ -49,8 +47,9 @@ Do you love my website? That's it then! It is hosted on GitHub using [Zola](@/ar
 * Contents you publish are private, only you can access via FTP.
 
 ## Conclusion
-Choosing the best provider will depend entirely on your specific requirements and needs.
-
+Choosing the best provider will depend entirely on your specific requirements and needs. Here are some thoughts on which provider to choose for what:
 * Choose GitHub if you want a reliable uptime experience, faster web load times, and are comfortable with your content being visible to the public.
 * Choose GitHub if you want to automate your builds, write in Markdown files for deployment, and don’t require a database. You can utilize static site generators to build and deploy your site automatically.
 * Choose InfinityFree if you want to keep your content hidden from the public, utilize CMS software, work with databases, and use server-side languages like PHP. It offers 5 GB of storage space for free, with the option to upgrade to premium plans for additional features.
+	
+	You can also use GitHub to build your website through a static site generator, and then have the FTP GitHub action uploaded to the server using FTP, with addition of GitHub's secrets feature to securely store usernames and passwords.

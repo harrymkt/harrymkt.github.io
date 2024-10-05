@@ -1,0 +1,6 @@
+{%-macro process(page)-%}
+{%-set pcontent=page.content|replace(from="$title$", to=page.title)-%}
+{%-if page.updated-%}{%-set pcontent=pcontent|replace(from="$updated$", to="<script>document.write(local_datetime_string('"~page.updated~"'));</script>")-%}{%-endif-%}
+{%-if page.date-%}{%-set pcontent=pcontent|replace(from="$date$", to="<script>document.write(local_datetime_string('"~page.date~"'));</script>")-%}{%-endif-%}
+{{pcontent|safe}}
+{%-endmacro process-%}

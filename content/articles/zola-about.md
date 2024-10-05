@@ -1,6 +1,6 @@
 +++
 title="All About Zola"
-updated=2024-10-03T10:39:00+06:30
+updated=2024-10-05T13:00:00+06:30
 date=2024-10-02T22:00:00+06:30
 description="A static site generator written in Rust"
 +++
@@ -16,6 +16,8 @@ It is one of the well-known static site generators available today, designed to 
 * Flexible; Zola gets out of your way so you can focus on your content, be it a blog, a knowledge base, a landing page or a combination of them.
 * Augmented Markdown; Zola comes with [shortcodes](https://getzola.org/documentation/content/shortcodes) and [internal links](https://getzola.org/documentation/content/linking) to make it easier to write your content.
 * Theme; Zola's build-in provided [theme](https://getzola.org/documentation/themes/overview) feature allows you to create your own custom themes, whether to publish on the official themes page, or to share with other users. Along with it, the [template](https://getzola.org/documentation/templates/overview) feature allows your theme to let users customize easily using blocks and the ability to extend the templates by having a base template, from which the child templates can be easily extended.
+* Multilingual; Build your sites in multiple languages by using file base names and let Zola generate for you!
+* And many more!
 
 ## Installation
 Zola doesn't need to be installed. Just download an [available release](https://github.com/getzola/zola/releases) and extract the zip.

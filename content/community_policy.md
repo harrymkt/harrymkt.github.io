@@ -1,10 +1,11 @@
 +++
 title="Community Policy"
-slug="community_policy"
+updated=2024-10-05T13:00:00+06:30
 +++
-
 # Community policy
 If you are in my communities, please follow the below rules.
+
+Last updated: $updated$.
 
 ## General rules
 These general rules are available in all comunities
@@ -13,7 +14,6 @@ These general rules are available in all comunities
 The first rule to follow is to avoid spamming. Spamming is strictly prohibited, and if you engage in spamming, you will be warned. Continued spamming after receiving multiple warnings will result in consequences, the severity of which will depend on the specific circumstances.
 
 Spamming includes:
-
 * Sending messages that contains random characters
 * Sending either screen reader crash codes or codes that can crash the client nor the device.
 
@@ -26,7 +26,6 @@ Respecting one another is of utmost importance. It is essential to show respect 
 The speaking and language is an important of rules that you should follow. You will only speak with official languages in the group, or else you will get a penalty depending on the severity.
 
 Official languages:
-
 1. English. This is an international group, so in this group you should speak in english language for everyone to understand.
 2. Burmese. This is only for those who could speak burmese, but could not speak english
 
@@ -34,7 +33,6 @@ You will not speak in other language accept from the list above, or you will get
 
 ### Posting contents
 Posting contents in the community is to post about games, projects, things that about visually impaired, and all forms of technical, you can post whatever you want. However, some contents will never be allowed to post. All of my communities do not have place for those contents to live. They are:
-
 * Post links to porn, murders, or any other adult rated material.
 * Post messages, that are, or contain portions that are, racistic, vulgar, disrespectful to culture or religion or ethnicity...
 
@@ -54,12 +52,11 @@ Failure to follow this rule will result in a penalty ranging from a one-day ban 
 
 ## Explaination
 This is a list of explanations of certain parts of the rules and guidelines that I think you may not fully understand:
-
-1. Federation ban ="If you get banned from the federation, which is only available on Telegram, you will no longer be able to join any communities located on Telegram that are associated with Harry Min Khant.
-2. Ban ="If you get banned, it means that you are no longer allowed to join to the community again.
-3. Warn ="If you get warned, it means that you have broke one or more rules, and indicating that you should listen and follow all over the rules
-4. Official language ="The language used in the community or the languages that are allowed to use in the community.
-5. Bot ="A bot helps to moderate the community, insureing that no unauthorized messages or no messages that aren't allowed to be received.
+1. Federation ban: If you get banned from the federation, which is only available on Telegram, you will no longer be able to join any communities located on Telegram that are associated with Harry Min Khant.
+2. Ban: If you get banned, it means that you are no longer allowed to join to the community again.
+3. Warn: If you get warned, it means that you have broke one or more rules, and indicating that you should listen and follow all over the rules
+4. Official language: The language used in the community or the languages that are allowed to use in the community.
+5. Bot: A bot helps to moderate the community, insureing that no unauthorized messages or no messages that aren't allowed to be received.
 
 ## Changes to the community policy
 I may update the community policy from time to time. The updated policies will be instantly affected and posted here.
