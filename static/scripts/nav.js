@@ -39,7 +39,7 @@ var m = dates.getMonth();
 var mn = dates.getMinutes();
 var dy = dates.getDate();
 var dt = "";
-var currentage=y-birthyear;
+var currentage=calculate_age(new Date(2006, 6, 26));
 if(m == 6 && dy == 26)
 dt += "This is <b id=\"ownername\"></b>'s " + currentage + " year"+(currentage===1?"":"s")+" Birthday. ";
 if((m == 11 && dy == 31) || (m == 0 && dy == 1))

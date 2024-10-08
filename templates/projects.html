@@ -8,10 +8,10 @@
 {%-for p in page.extra.projects%}
 <h2><a href="{{p.url | safe}}">{{p.name}}</a></h2>
 <p>Type: {{p.type}}.</p>
-{%if p.status%}<p>Status: {{p.status}}</p>{%endif%}
+{%-if p.status%}<p>Status: {{p.status}}</p>{%-endif%}
 {%-if p.description%}
 <br>
-<p>{{p.description}}</p>
+{{p.description|markdown|safe}}
 {%- endif-%}
 {%-endfor-%}
 {%-else-%}
