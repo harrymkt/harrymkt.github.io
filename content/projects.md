@@ -3,7 +3,7 @@ title="Projects"
 template="projects.html"
 [extra]
 projects=[
-{name="Endless Battle", type="Game", status="under construction process", url="https://harrymkt.github.io/endless-battle", description="A 3D offline shooting game for visually impaired"},
+{name="Endless Battle", type="Game", status="released", url="https://harrymkt.github.io/endless-battle", description="A 3D offline shooting game for visually impaired"},
 {name="ZL UI Navigation", type="Theme, Open Source", status="released", url="https://github.com/harrymkt/zluinav", description="This theme is for static site generator called Zola. Read more about [Zola](@/articles/zola-about.md) in the Useful Articles section."}
 ]
 +++

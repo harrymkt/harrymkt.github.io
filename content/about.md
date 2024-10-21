@@ -2,7 +2,6 @@
 title="About"
 +++
 # About me
-
 <script>
 document.write("<p>Greetings! I am "+calculate_age(new Date(2006, 6, 26))+" years old, my name is <b id=\"myname\">"+ownername+"</b>, a technology enthusiast from Myanmar who finds immense joy in the world of research. As someone who has been blind since birth, I have learned to navigate and appreciate the wonders of technology and research through alternative senses. Alongside my love for technology, I am also deeply passionate about music and audio production, where I can express myself creatively.</p>");
 </script>
