@@ -2,40 +2,34 @@
 Custom CSS style file for my personal website.
 */
 //Body
-body
-{
-//I like blue
-color: Blue;
-width: auto;
-height: auto;
+body {
+	//I like blue
+	color: Blue;
+	width: auto;
+	height: auto;
 }
-#mainc
-{
-//Main content is also blue? Hmm...
-color: Blue;
-width: auto;
-height: auto;
+#mainc {
+	//Main content is also blue? Hmm...
+	color: Blue;
+	width: auto;
+	height: auto;
 }
-footer
-{
-//Why white? Well, I like it too. It shows honesty, and kindness, as far as I know.
-background-color: White;
-width: 250px;
-height: 250px;
+footer {
+	//Why white? Well, I like it too. It shows honesty, and kindness, as far as I know.
+	background-color: White;
+	width: 250px;
+	height: 250px;
 }
-.beforefooter
-{
-background-color: White;
-width: auto;
-height: auto;
+.beforefooter {
+	background-color: White;
+	width: auto;
+	height: auto;
 }
-#cometome
-{
-//For special, I made gold color for "come to me" section.
-color: Gold;
+#cometome {
+	//For special, I made gold color for "come to me" section.
+	color: Gold;
 }
-#ownername
-{
-//Remember I like blue? My name should be blue then!
-color: Blue;
+#ownername {
+	//Remember I like blue? My name should be blue then!
+	color: Blue;
 }
