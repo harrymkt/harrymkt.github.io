@@ -1,7 +1,6 @@
 +++
-title="Contact"
+title = "Contact"
 +++
-
 # Contact
 You can contact me with the following:
 

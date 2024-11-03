@@ -1,7 +1,7 @@
 +++
-title="A New Chapter Begins"
-date=2024-08-28T16:48:00
-updated=2024-10-05T13:23:00+06:30
+title = "A New Chapter Begins"
+date = 2024-08-28T16:48:00
+updated = 2024-10-05T13:23:00+06:30
 +++
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
 <!--more-->

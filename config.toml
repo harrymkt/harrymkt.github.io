@@ -1,22 +1,21 @@
-output_dir="HTML"
-title="Harry Min Khant"
-base_url="/"
-#base_url="https://harrymkt.github.io"
-theme="zluinav"
-author="Harry Min Khant"
+output_dir = "HTML"
+title = "Harry Min Khant"
+base_url = "https://harrymkt.github.io"
+theme = "zluinav"
+author = "Harry Min Khant"
 feed_filenames = ["rss.xml"]
 compile_sass = false
 build_search_index = false
-default_language="en"
+default_language = "en"
 [slugify]
 paths = "safe"
 taxonomies = "off"
 anchors = "off"
 [extra]
-nav=[
-{name="Home", url="/.l./"},
-{name="Projects", url="/.l./projects"},
-{name="Useful Communities", url="/.l./community"},
-{name="Blog", url="/.l./blog/", title="Read the latest news"},
-{name="Useful Articles", url="/.l./articles/", title="Read the useful articles!"}
+nav = [
+{name = "Home", url = "/.l./"},
+{name = "Projects", url = "/.l./projects"},
+{name = "Useful Communities", url = "/.l./community"},
+{name = "Blog", url = "/.l./blog/", title = "Read the latest news"},
+{name = "Useful Articles", url = "/.l./articles/", title = "Read the useful articles!"}
 ]

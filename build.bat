@@ -1,5 +1,5 @@
 @echo off
 
-%zola% build
+zola build
 
 pause

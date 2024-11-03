@@ -1,6 +1,6 @@
 +++
-title="Community Policy"
-updated=2024-10-05T13:00:00+06:30
+title = "Community Policy"
+updated = 2024-10-05T13:00:00+06:30
 +++
 # Community policy
 If you are in my communities, please follow the below rules.

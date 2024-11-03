@@ -1,6 +1,6 @@
 +++
-title="Useful Communities"
-updated=2024-10-21T14:29:00+06:30
+title = "Useful Communities"
+updated = 2024-10-21T14:29:00+06:30
 +++
 # Useful communities
 This is a list of useful and helpful communities. |Have a look!

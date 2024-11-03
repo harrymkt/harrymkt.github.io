@@ -1,8 +1,7 @@
 +++
-title="Config"
+title = "Config"
 +++
-
-# Site configuration</h1>
+# Site configuration
 Here you can change the preferences for the site.
 
 <form>
