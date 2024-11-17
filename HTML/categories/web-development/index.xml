@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on Harry Min Khant</title>
+    <link>https://harrymkt.github.io/categories/web-development/</link>
+    <description>Recent content in Web Development on Harry Min Khant</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Oct 2024 22:00:00 +0630</lastBuildDate>
+    <atom:link href="https://harrymkt.github.io/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All About Zola</title>
+      <link>https://harrymkt.github.io/articles/zola-about/</link>
+      <pubDate>Wed, 02 Oct 2024 22:00:00 +0630</pubDate>
+      <guid>https://harrymkt.github.io/articles/zola-about/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://getzola.org/&#34; title=&#34;Official website&#34;&gt;Zola&lt;/a&gt; is a static site generator written in Rust language powered by &lt;a href=&#34;https://keats.github.io/tera/&#34;&gt;Tera&lt;/a&gt; as its templating engine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>All About Cobalt</title>
+      <link>https://harrymkt.github.io/articles/cobalt-about/</link>
+      <pubDate>Fri, 06 Sep 2024 22:03:00 +0630</pubDate>
+      <guid>https://harrymkt.github.io/articles/cobalt-about/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://cobalt-org.github.io&#34; title=&#34;Official website&#34;&gt;Cobalt&lt;/a&gt; is a static site generator written in Rust language powered by &lt;a href=&#34;https://shopify.github.io/liquid&#34;&gt;Liquid&lt;/a&gt; as its templating engine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Free web hosting providers</title>
+      <link>https://harrymkt.github.io/articles/free-web-host-providers/</link>
+      <pubDate>Wed, 04 Sep 2024 22:30:00 +0630</pubDate>
+      <guid>https://harrymkt.github.io/articles/free-web-host-providers/</guid>
+      <description>&lt;p&gt;Do you want to get your website up and running but can&amp;rsquo;t find free hosting services and don’t want to spend a lot of money? Look no further!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

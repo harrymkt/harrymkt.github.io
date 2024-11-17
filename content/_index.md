@@ -1,6 +1,6 @@
-+++
-title = "Home"
-+++
+---
+title: "Home"
+---
 # Welcome
 <p id="welcomep">
 <script>document.getElementById("welcomep").textContent="Hello "+get_storage("visitname","visiter")+", thanks for stopping bye! I am "+ownername+", and I hope my website will give you useful contents and creativities. Have a look around!";</script>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://harrymkt.github.io/scripts/theme.js"></script>
+<link href="https://harrymkt.github.io/css/theme.css">
+<script src="https://harrymkt.github.io/scripts/functions.js"></script>
+<script src="https://harrymkt.github.io/scripts/all.js"></script>
+<script src="https://harrymkt.github.io/scripts/nav.js"></script>
+<script src="https://harrymkt.github.io/scripts/footer.js"></script>
+<link href="https://harrymkt.github.io/css/style.css">
+<title>Config - Harry Min Khant</title>
+</head>
+<body>
+<a href="https://harrymkt.github.io/config">Config Site</a>
+<a href="#mainc" class="skip-link">Skip to main content</a>
+<a href="#navigation" class="skip-link">Skip to navigation</a>
+<a href="#hgfooter" class="skip-link">Skip to footer</a>
+<script>navstart();</script>
+
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
+<ul style="list-style-type:none;">
+<li>
+<a href="/">Home</a>
+</li>
+<li>
+<a href="/projects/">Projects</a>
+</li>
+<li>
+<a href="/community/">Useful Coommunities</a>
+</li>
+<li>
+<a href="/blog/">Blog</a>
+</li>
+<li>
+<a href="/articles/">Useful Articles</a>
+</li>
+</ul>
+</nav>
+
+<main id="mainc"><h1 id="site-configuration">Site configuration</h1>
+<p>Here you can change the preferences for the site.</p>
+<form>
+<fieldset>
+<legend><h2>Time format</h2></legend>
+<p>The time format is the format that will be used to display the date and time which you can find at the top of any page.</p>
+<p id="timeformat"></p>
+<label for="timeformatinp">Choose time format</label>
+<select name="labeltf" id="timeformatinp" placeholder="Choose time format" value="Choose">
+<option value="">Select format</option>
+<option select value="12">12 hour</option>
+<option select value="24">24 hour</option>
+</select>
+</fieldset>
+<fieldset>
+<legend><h2>Visiter name for the site</h2></legend>
+<p>The visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
+<p id="visitname"></p>
+<label for="visitnameinp">Enter your name that will be used on the site</label>
+<input id="visitnameinp" type="text" placeholder="Enter your name to use"></input>
+</fieldset>
+<p><input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input></p>
+<fieldset>
+<legend><h2>Reset config</h2></legend>
+<input type="button" onclick="removeallcf();" placeholder="Remove all configs" value="Remove all config"></input>
+</fieldset>
+</form>
+<script>
+function startform()
+{
+var tf=localStorage.getItem("timeformat");
+if(tf!=="12") tf="24";
+document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
+var vu=localStorage.getItem("visitname");
+if(vu==="" || vu===null) vu="visiter";
+document.getElementById("visitname").textContent="Current name, "+vu;
+}
+startform();
+function formsub()
+{
+let o=0;
+var tf=document.getElementById("timeformatinp").value;
+if(tf!==null && tf!=="")
+{
+if(tf!=="12") tf="24";
+localStorage.setItem("timeformat",tf);
+document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
+o++;
+}
+var vu=document.getElementById("visitnameinp").value;
+if(vu!==null && vu!=="")
+{
+if(vu==="" || vu==null) vu="visiter";
+localStorage.setItem("visitname",vu);
+document.getElementById("visitname").textContent="Current name, "+vu;
+o++
+}
+var msg=(o>0?o+" options saved":"options unchanged");
+alert(msg);
+}//end.function
+function removeallcf()
+{
+if(confirm("Are you sure you want to remove all configurations saved on this site? This cannot be undone"))
+{
+localStorage.clear();
+startform();
+var msg="All the site configurations have been cleared.";
+alert(msg);
+}
+}
+</script></main>
+<div id="hgfooter">
+<div class="beforefooter" id="footersection">
+<div id="cometome">
+<h2>Come to me</h2>
+<p>If you want to send a message and get in touch with me, check out below.</p>
+<ul>
+<li><a href="https://facebook.com/harry.mk.64">Add friend / follow on Facebook</a></li>
+<li><a href="https://t.me/harrymkt">Message on Telegram</a></li>
+</ul>
+</div>
+<h2>Keep in touch with me</h2>
+<p>Don't let miss anything from me!</p>
+<ul>
+<li><a href="https://github.com/harrymkt">My GitHub</a></li>
+<li><a href="https://youtube.com/@harry_mk">Subscribe to my YouTube Channel</a></li>
+<li><a href="https://t.me/harrymktg">My Telegram Channel</a></li>
+</ul>
+<h2>Useful links</h2>
+<a href="https://harrymkt.github.io/about">About me</a>
+<a href="https://harrymkt.github.io/contact">Contact me</a>
+<a href="https://harrymkt.github.io/community_policy">Community Policy</a>
+<a href="https://harrymkt.github.io/privacy">Privacy Policy</a>
+<a href="https://harrymkt.github.io/accessibility" title="Learn more about the accessibility of the site!">Accessibility</a>
+</div>
+<script>addfooter();</script>
+</div>
+<script src="https://harrymkt.github.io/scripts/copy.js"></script>
+</body>
+</html>

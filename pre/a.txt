@@ -1,7 +1,3 @@
-{%extends "zluinav/templates/blogpage.html"%}
-{%-block content-%}
-{{super()}}
-
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"
         data-repo-id="R_kgDOLG3Hdg"
@@ -17,4 +13,3 @@
         crossorigin="anonymous"
         async>
 </script>
-{%-endblock content-%}

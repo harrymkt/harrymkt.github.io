@@ -1,6 +1,6 @@
-+++
-title = "About"
-+++
+---
+title: "About"
+---
 # About me
 <p id="myfirst"></p>
 <script>

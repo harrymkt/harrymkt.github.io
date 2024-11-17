@@ -1,6 +1,6 @@
-+++
-title = "Config"
-+++
+---
+title: "Config"
+---
 # Site configuration
 Here you can change the preferences for the site.
 

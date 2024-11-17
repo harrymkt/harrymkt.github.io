@@ -1,0 +1,19 @@
+{{- define "main" }}
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
+{{- with .Params.Projects }}
+<p>{{ T "projecttotal" (. | len) }}</p>
+{{- range . }}
+<h2><a href="{{ .url }}">{{ .name }}</a></h2>
+<p>Type: {{ .type }}</p>
+<p>Status: {{ .status }}</p>
+<br>
+{{- with .description }}
+<div>
+{{ . | markdownify }}
+</div>
+{{- end }}
+{{- end }}
+{{- else }}
+<p>No projects available</p>
+{{- end }}
+{{- end }}

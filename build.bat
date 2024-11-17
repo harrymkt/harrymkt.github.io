@@ -1,5 +1,4 @@
 @echo off
-
-zola build
-
+title Building
+hugo build
 pause
