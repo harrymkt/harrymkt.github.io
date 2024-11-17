@@ -9,7 +9,7 @@ Last updated: $updated$.
 
 Terms used:
 * I, me, my: Refers to Harry Min Khant, the owner of this website.
-* You, your: Refers to <script>document.write(get_storage("visitname","visitor"));</script>
+* You, your: Refers to <script>document.write(get_storage('visitname', 'visitor'));</script>
 
 ## Collection of Information
 I may collect the following personal information:
