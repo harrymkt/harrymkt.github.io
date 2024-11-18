@@ -29,7 +29,7 @@ If you don't have a domain, GitHub has its subdomain, **username.github.io**, wh
 
 GitHub page host documentation is available [here](https://pages.github.com/).
 
-Do you love my website? That's it then! It is hosted on GitHub using [Zola](@/articles/zola-about.md), a static site generator written in Rust.
+Do you love my website? That's it then! It is hosted on GitHub.
 
 ## InfinityFree
 [InfinityFree](https://infinityfree.com/) is another alternative free web hosting provider.

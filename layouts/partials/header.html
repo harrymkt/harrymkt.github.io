@@ -1,7 +1,0 @@
-<a href="{{ absURL "config" }}">Config Site</a>
-{{- if hugo.IsMultilingual }}<a href="{{ absURL "lang" }}">{{T "lchange" }}</a>{{ end }}
-<a href="#mainc" class="skip-link">{{ T "acc_skip_main" }}</a>
-<a href="#navigation" class="skip-link">{{ T "acc_skip_nav" }}</a>
-<a href="#hgfooter" class="skip-link">{{ T "acc_skip_footer" }}</a>
-<script>navstart();</script>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
