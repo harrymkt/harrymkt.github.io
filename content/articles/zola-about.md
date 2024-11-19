@@ -5,6 +5,7 @@ lastmod: 2024-10-05T13:00:00+06:30
 date: 2024-10-02T22:00:00+06:30
 description: "A static site generator written in Rust"
 categories: [web development]
+authors: [Harry Min Khant]
 ---
 [Zola](https://getzola.org/ "Official website") is a static site generator written in Rust language powered by [Tera](https://keats.github.io/tera/) as its templating engine.
 <!--more-->

@@ -3,6 +3,7 @@
 <script src="{{ absURL "scripts/nav.js" }}"></script>
 <script src="{{ absURL "scripts/footer.js" }}"></script>
 <link href="{{ absURL "css/style.css" }}">
-{{- define "beforeheader" -}}
+{{- define "beforeheader" }}
+<script>navstart();</script>
 <a href="{{ absURL "config" }}">Config Site</a>
-{{- end -}}
+{{- end }}

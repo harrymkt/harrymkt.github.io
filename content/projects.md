@@ -12,7 +12,7 @@ params:
       type: "Theme, Open Source"
       status: "released"
       url: "https://github.com/harrymkt/hguinav"
-      description: "This theme is for static site generator called Hugo."
+      description: "This theme is for static site generator called Hugo. Read more about [Hugo]({{% relref \"/articles/hugo-about.md\" %}}) in the Useful Articles section."
     - name: "ZL UI Navigation"
       type: "Theme, Open Source"
       status: "released"

@@ -5,7 +5,7 @@ lastmod: 2024-10-05T13:00:00+06:30
 # Community policy
 If you are in my communities, please follow the below rules.
 
-Last updated: $updated$.
+Last updated: %updated%.
 
 ## General rules
 These general rules are available in all comunities

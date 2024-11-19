@@ -4,6 +4,7 @@ title: "All About Hugo"
 date: 2024-11-18T17:43:00+06:30
 description: "A static site generator written in Go"
 categories: [web development]
+authors: [Harry Min Khant]
 ---
 [Hugo](https://gohugo.io/ "Official website") is a static site generator written in Go language optimized for speed and designed for flexibility.
 <!--more-->

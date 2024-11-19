@@ -4,6 +4,7 @@ title: "A New Chapter Begins"
 lastmod: 2024-10-05T13:23:00+06:30
 date: 2024-08-28T16:48:00+06:30
 categories: [News]
+authors: [Harry Min Khant]
 ---
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
 <!--more-->
@@ -15,6 +16,6 @@ This situation has brought a lot of unexpected changes. Sadly, all the games I h
 
 But every ending is a new beginning, right? Here's to hoping for better times ahead!
 
-## Updates as of $updated$
+## Updates as of %updated%
 Unfortunately, the status of the hard disk recovery was not reported. However, here are some current status:
-* [Endless Battle](https://harrymkt.github.io/endless-battle) is being reworked; this means that the game is being redeveloped starting from scratch again, and for backup, I've saved to a private git repository so it will not loss in case of issue.
+* [Endless Battle renamed Mini Games Hub](https://harrymkt.github.io/mgh) is being reworked; this means that the game is being redeveloped starting from scratch again, and for backup, I've saved to a private git repository so it will not loss in case of issue.
