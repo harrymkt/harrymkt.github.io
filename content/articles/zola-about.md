@@ -1,6 +1,6 @@
 ---
-type: blog
 title: "All About Zola"
+keywords: [zola,deploy,static,web,generator,host]
 lastmod: 2024-10-05T13:00:00+06:30
 date: 2024-10-02T22:00:00+06:30
 description: "A static site generator written in Rust"

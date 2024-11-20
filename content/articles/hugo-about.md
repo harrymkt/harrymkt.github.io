@@ -1,6 +1,6 @@
 ---
-type: blog
 title: "All About Hugo"
+keywords: [generator,hugo,web,deploy,static,host]
 date: 2024-11-18T17:43:00+06:30
 description: "A static site generator written in Go"
 categories: [web development]
@@ -22,7 +22,9 @@ Due to its flexible framework, multilingual support, and powerful taxonomy syste
 * And many more features!
 
 ## Notes
-Hugo is not simple as [Cobalt]({{% relref "cobalt-about" %}}) and [Zola]({{% relref "zola-about" %}}), but it provides many more features and full multilingual / taxonomy support.
+* Hugo is not simple as [Cobalt]({{% relref "cobalt-about" %}}) and [Zola]({{% relref "zola-about" %}}), but it provides many more features and full multilingual / taxonomy support.
+* Because of Zola's easy templating engine, it could become one of the world's most popular static site generators in the future.
+* Learning Hugo will take time, especially with its vast documentation and professional features.
 
 ## Installation
 Please visit [installation page](https://gohugo.io/installation/).

@@ -1,6 +1,6 @@
 ---
-type: blog
 title: "Free web hosting providers"
+keywords: [static,web,host,deploy,generator,cobalt,zola,hugo]
 date: 2024-09-04T22:30:00+06:30
 description: "Best free hosting providers at all times!"
 categories: [web development]

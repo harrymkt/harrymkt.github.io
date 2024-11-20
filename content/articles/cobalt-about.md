@@ -1,6 +1,6 @@
 ---
-type: blog
 title: "All About Cobalt"
+keywords: [static,deploy,web,cobalt,generator,host]
 date: 2024-09-06T22:03:00+06:30
 description: "A static site generator written in Rust"
 categories: [Web Development]
