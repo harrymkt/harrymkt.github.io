@@ -19,7 +19,7 @@ Due to its flexible framework, multilingual support, and powerful taxonomy syste
 * And many more features!
 
 ## Notes
-* Hugo is not simple as [Cobalt](@cobalt-about.md) and [Zola](@zola-about.md), but it provides many more features and full multilingual / taxonomy support.
+* Hugo is not simple as [Cobalt](@/articles/cobalt-about.md) and [Zola](@/articles/zola-about.md), but it provides many more features and full multilingual / taxonomy support.
 * Because of Zola's easy templating engine, it could become one of the world's most popular static site generators in the future.
 * Learning Hugo will take time, especially with its vast documentation and professional features.
 

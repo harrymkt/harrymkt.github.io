@@ -77,6 +77,19 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 - You are building small to medium-sized sites and don’t need complex taxonomies.
 - You prefer using Tera templates over Go Templates for their familiarity and ease.
 - You want a lightweight, standalone tool without external dependencies.
+- You want fewer files structure as possible.
+
+---
+
+## Recommendation
+- Use Zola if you want to make your website fewer files structure as possible. Hugo requires slight higher number of files and folders.
+- Use Zola if you want to be able to extend templates easily with fewer files struct. Zola's `extends` and `super` functions are built-in, making it possible to modify only the parts you need even if it comes from a large theme.
+- Use Hugo if you want to have more features than what Zola has, and if you're ok with Go template layouts.
+
+---
+
+## Potential Future
+While Hugo is currently the world's most popular static site generator, Zola could become one of the world's most popular, easyer and friendlyer static site generators in the near future.
 
 ---
 

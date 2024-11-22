@@ -1,4 +1,7 @@
 {%- extends "base.html" %}
+{%- block title %}
+{{ general::title(titles = [page.title]) }}
+{%- endblock title %}
 {%- block content %}
 {{- content::process(page=page) | safe }}
 {%- if page.extra.projects %}
