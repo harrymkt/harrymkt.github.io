@@ -1,8 +1,9 @@
 {%- extends "base.html" %}
 {%- block content %}
-{{ content::process(page=page) | safe }}
-{%- if page.extra.Projects %}
-<p>Projects</p>
+{{- content::process(page=page) | safe }}
+{%- if page.extra.projects %}
+{%- set plength = page.extra.projects | length %}
+<p>There {{ plength | pluralize(singular = "is", plural = "are") }} {{ plength }} project{{ plength | pluralize }} available</p>
 {%- for p in page.extra.projects %}
 <h2><a href="{{ p.url | safe }}">{{ p.name }}</a></h2>
 <p>Type: {{ p.type }}</p>
@@ -10,7 +11,7 @@
 {%- if p.description %}
 <br>
 <div>
-{{ p.description | markdown }}
+{{- p.description | markdown | safe }}
 </div>
 {%- endif %}
 {%- endfor %}
