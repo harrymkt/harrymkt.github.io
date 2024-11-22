@@ -1,11 +1,8 @@
----
-title: "All About Cobalt"
-keywords: [static,deploy,web,cobalt,generator,host]
-date: 2024-09-06T22:03:00+06:30
-description: "A static site generator written in Rust"
-categories: [Web Development]
-authors: [Harry Min Khant]
----
++++
+date = 2024-09-06T22:03:00+06:30
+description = "A static site generator written in Rust"
+title = "All About Cobalt"
++++
 [Cobalt](https://cobalt-org.github.io "Official website") is a static site generator written in Rust language powered by [Liquid](https://shopify.github.io/liquid) as its templating engine.
 <!--more-->
 

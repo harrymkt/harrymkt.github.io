@@ -1,11 +1,8 @@
----
-type: blog
-title: "A New Chapter Begins"
-lastmod: 2024-10-05T13:23:00+06:30
-date: 2024-08-28T16:48:00+06:30
-categories: [News]
-authors: [Harry Min Khant]
----
++++
+date = 2024-08-28T16:48:00+06:30
+updated = 2024-10-05T13:23:00+06:30
+title = "A New Chapter Begins"
++++
 Hello everyone. This is the first blog post, and I wanted to share an update on my current situation.
 <!--more-->
 On August 24, 2024, at around 09:00 PM GMT+06:30 Asia/Yangon standard time, my computer broke down unexpectedly. After a nerve-wracking wait, the root cause was finally discovered three days later on August 27, 2024, at around 06:00 PM GMT+06:30 Asia/Yangon standard time.

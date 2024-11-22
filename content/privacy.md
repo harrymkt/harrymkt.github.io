@@ -1,7 +1,7 @@
----
-title: "Privacy Policy"
-lastmod: 2024-10-05T13:00:00+06:30
----
++++
+updated = 2024-10-05T13:00:00+06:30
+title = "Privacy Policy"
++++
 # Privacy Policy
 At Harry Min Khant, I am committed to protecting your privacy. This privacy policy explains how I collect, use, and disclose personal information in connection with my technical support services, projects, and other offerings.
 

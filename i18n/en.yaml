@@ -1,3 +1,0 @@
-projecttotal :
-  one: "There is {{ . }} project available"
-  other: "There are {{ . }} projects available"

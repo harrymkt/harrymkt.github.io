@@ -1,12 +1,9 @@
----
-title: "All About Zola"
-keywords: [zola,deploy,static,web,generator,host]
-lastmod: 2024-10-05T13:00:00+06:30
-date: 2024-10-02T22:00:00+06:30
-description: "A static site generator written in Rust"
-categories: [web development]
-authors: [Harry Min Khant]
----
++++
+date = 2024-10-02T22:00:00+06:30
+description = "A static site generator written in Rust"
+updated = 2024-10-05T13:00:00+06:30
+title = "All About Zola"
++++
 [Zola](https://getzola.org/ "Official website") is a static site generator written in Rust language powered by [Tera](https://keats.github.io/tera/) as its templating engine.
 <!--more-->
 It is one of the well-known static site generators available today, designed to be easy, flexible, and lightweight. You write your site's content in Markdown, and Zola will build the site for you as HTML files, ready to be served on your server. While other static site generators are available, they are not as simple as Zola, which requires no additional libraries to install. This makes it a perfect, time-saving solution for speed, stability, clean layouts, and ease of use.

@@ -1,7 +1,7 @@
----
-title: "Community Policy"
-lastmod: 2024-10-05T13:00:00+06:30
----
++++
+updated = 2024-10-05T13:00:00+06:30
+title = "Community Policy"
++++
 # Community policy
 If you are in my communities, please follow the below rules.
 
