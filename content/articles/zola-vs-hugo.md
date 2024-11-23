@@ -13,7 +13,7 @@ Static site generators (SSGs) have become essential tools for developers looking
 Hugo is a high-performance static site generator written in Go. Known for its incredible speed, Hugo can handle thousands of pages and generate a complete site in milliseconds. It offers extensive theming options, powerful content organization, and a vibrant community.
 
 ### Zola
-Zola is a relatively newer static site generator written in Rust. It focuses on simplicity and user experience, providing a streamlined toolchain without external dependencies. Zola aims to minimize setup complexity while offering robust features like support for modern templates and straightforward configuration.
+Zola is a relatively newer static site generator written in Rust. It focuses on simplicity and user experience, providing a streamlined toolchain without external dependencies. Zola aims to minimize setup complexity while offering robust features like support for modern templates and straightforward configuration. However, Zola's templating system is made to be easy as possible. With the extensibility and fewer files structure, Zola proves to be faster than Hugo, about 3 to 4 times.
 
 ---
 
@@ -22,7 +22,7 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 |---|---|---|
 | Language | Go| Rust |
 | Setup | Binary executable; easy installation | Single binary, no external dependencies |
-| Speed | Blazing fast| Extremely fast (Rust-powered) |
+| Speed | Fast| Blazing fast (Rust-powered) |
 | Template Engine | Go Template | Tera (inspired by Jinja2)|
 | Configuration | TOML, YAML, or JSON | TOML |
 | Multilingual Support | Excellent | Good |
@@ -30,10 +30,11 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 | Themes | Large ecosystem with many free options | Smaller but growing collection |
 | Build Toolchain | Flexible but complex for some workflows | Simplified |
 | Templating | Hard to implement / extend | Easy to extend / implement, fewer files |
+| Updates | Regular updates possibly because of breaking changes | Not regular but stable. |
 ---
 
 ## Strengths of Hugo
-1. Unmatched Speed 
+1. Speed:
 	Hugo’s speed is legendary. Even sites with tens of thousands of pages can be generated almost instantly, making it ideal for large projects or frequently updated sites.
 2. Rich Ecosystem 
 	Hugo boasts a vast library of pre-designed themes and plugins, enabling quick starts and advanced customizations.
@@ -52,7 +53,7 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 3. No External Dependencies
 	Unlike Hugo, which sometimes requires additional setup for themes or plugins, Zola is a self-contained tool that works out of the box.
 4. Fast
-	Zola is fast, 99 percent closely match with Hugo.
+	Zola is fast, 3-4 times faster than Hugo.
 ---
 
 ## Weaknesses
@@ -66,7 +67,6 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 
 ## When to Choose Hugo
 - You are building a large or complex site with diverse content types.
-- Speed is critical for your workflow, and you anticipate frequent rebuilds.
 - You need advanced multilingual support or intricate taxonomy structures.
 - You want access to a large ecosystem of themes and community resources.
 
@@ -74,18 +74,19 @@ Zola is a relatively newer static site generator written in Rust. It focuses on 
 
 ## When to Choose Zola
 - You value simplicity and a minimal setup process.
-- You are building small to medium-sized sites and don’t need complex taxonomies.
+- You don’t need complex taxonomies and advance i18n multilingual.
 - You prefer using Tera templates over Go Templates for their familiarity and ease.
 - You want a lightweight, standalone tool without external dependencies.
 - You want fewer files structure as possible.
+- You need the ability to add custom plain HTML without any configuration and also don't want the HTML syntax to be escaped or replaced with special characters.
 
 ---
 
 ## Recommendation
-- Use Zola if you want to make your website fewer files structure as possible. Hugo requires slight higher number of files and folders.
+- Use Zola if you want to make your website fewer files structure as possible. Hugo requires higher number of files and folders.
 - Use Zola if you want to be able to extend templates easily with fewer files struct. Zola's `extends` and `super` functions are built-in, making it possible to modify only the parts you need even if it comes from a large theme.
 - Use Hugo if you want to have more features than what Zola has, and if you're ok with Go template layouts.
-
+- Zola is recommended. While Hugo is being talked as the world's most popular and fast static site generator, its Go templating language makes it hard to learn Hugo.
 ---
 
 ## Potential Future
@@ -95,3 +96,8 @@ While Hugo is currently the world's most popular static site generator, Zola cou
 
 ## Conclusion
 Both Hugo and Zola are excellent static site generators, but they serve slightly different purposes. Hugo is the powerhouse for large, complex projects, offering unmatched speed and flexibility. Zola, on the other hand, is a user-friendly alternative that shines in simplicity and modernity. Your choice ultimately depends on your project’s requirements and your comfort with the underlying technologies. Whether you pick Zola or Hugo, you’ll be working with a robust tool that empowers you to build fast, reliable, and beautiful static websites.
+
+## Links
+- [Zola website](https://www.getzola.org/)
+- [All About Zola](@/articles/zola-about.md)
+- [All About Hugo](@/articles/hugo-about.md)
