@@ -1,5 +1,5 @@
 {%- extends "zluinav/templates/base.html" %}
-{%- block extrahead -%}
+{%- block extrahead %}
 {{- super() }}
 <script src="{{ get_url(path = "scripts/functions.js") }}"></script>
 <script src="{{ get_url(path = "scripts/all.js") }}"></script>
@@ -16,6 +16,7 @@
 {{- super() }}
 {%- endblock nav %}
 {%- block footer %}
+<aside>
 <div class="beforefooter" id="footersection">
 <div id="cometome">
 <h2>Come to me</h2>
@@ -39,5 +40,6 @@
 <a href="{{ get_url(path = "privacy") }}">Privacy Policy</a>
 <a href="{{ get_url(path = "accessibility") }}" title="Learn more about the accessibility of the site!">Accessibility</a>
 </div>
+</aside>
 <script>addfooter();</script>
 {%- endblock footer %}
