@@ -17,7 +17,7 @@ function ts_to_readable_time(timestamp, showsecond = false, ltext = '', show_ful
 	var months = Math.floor(days / 30);
 	var years = Math.floor(months / 12);
 	var output = '';
-if(!show_full) {
+	if(!show_full) {
 		if (years > 0) {
 			output = years + " year";
 			if (years > 1) output += "s";
@@ -103,4 +103,31 @@ function get_timestamp(dateString) {
 	const date = new Date(validDateString);
 	// Return the timestamp (milliseconds since epoch)
 	return date.getTime();
+}
+function switchTab(tab_id) {
+	// Hide all tab contents
+	const contents = document.querySelectorAll(".tab-content");
+	contents.forEach(content => {
+		content.style.display = "none";
+	});
+	// Remove active class from all tabs
+	const tabs = document.querySelectorAll(".tab");
+	tabs.forEach(tab => {
+		tab.classList.remove("active");
+		tab.setAttribute("aria-selected", "false");
+		tab.setAttribute("tabindex", "-1");
+	});
+	// Show the selected tab content and set it as active
+	if (tab_id !== null) {
+		const selectedContent = document.getElementById("tab-content-" + tab_id);
+		if (selectedContent) {
+			selectedContent.style.display = "block";
+		}
+		const selectedTab = document.querySelector(`.tab[data-tab-id="${tab_id}"]`);
+		if (selectedTab) {
+			selectedTab.classList.add("active");
+			selectedTab.setAttribute("aria-selected", "true");
+			selectedTab.setAttribute("tabindex", "0");
+		}
+	}
 }
