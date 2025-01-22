@@ -16,10 +16,19 @@ build_search_index = false
 default_language = "en"
 
 [extra]
-nav = [
-{name = "Home", url = "/.l./", key = "H", id = "nav1"},
-{name = "Projects", url = "/.l./projects"},
-{name = "Blog", url = "/.l./blog/", title = "Read the latest news", id = "nav3"},
-{name = "Useful Communities", url = "/.l./community"},
-{name = "Useful Articles", url = "/.l./articles"}
-]
+  [extra.menus]
+    [[extra.menus.main]]
+      name = "Home"
+      url = "/"
+    [[extra.menus.main]]
+      name = "Projects"
+      url = "/projects"
+    [[extra.menus.main]]
+      name = "Blog"
+      url = "/blog"
+    [[extra.menus.main]]
+      name = "Useful Communities"
+      url = "/community"
+    [[extra.menus.main]]
+      name = "Useful Articles"
+      url = "/articles"
