@@ -1,38 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
+<baseurl href="https://harrymkt.github.io"/>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://harrymkt.github.io/css/theme.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
 <script src="https://harrymkt.github.io/scripts/theme.js"></script>
 <script src="https://harrymkt.github.io/scripts/functions.js"></script>
 <script src="https://harrymkt.github.io/scripts/all.js"></script>
 <script src="https://harrymkt.github.io/scripts/nav.js"></script>
 <script src="https://harrymkt.github.io/scripts/footer.js"></script>
 <link href="https://harrymkt.github.io/css/style.css">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Accessibility">
+<meta property="og:url" content="https://harrymkt.github.io/accessibility/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="">
+<meta name="twitter:title" content="Accessibility">
+<link rel="canonical" href="https://harrymkt.github.io/accessibility/">
+<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
 <title>Accessibility – Harry Min Khant</title>
 </head>
 <body>
 <a href="https://harrymkt.github.io/config">Config Site</a>
 
-<a href="#mainc" class="skip-link">Skip to main content</a>
-<a href="#navigation" class="skip-link">Skip to navigation</a>
-<a href="#zlfooter" class="skip-link">Skip to footer</a>
+<p><a href="#mainc" class="skip-link">Skip to main content</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
+<p><a href="#zlfooter" class="skip-link">Skip to footer</a></p>
+<link href="https://harrymkt.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="https://harrymkt.github.io/pagefind/pagefind-ui.js"></script>
+<div id="sitesearch"></div>
 <script>navstart();</script>
 
 <nav id="navigation" role="navigation" aria-label="Main menu">
 <h2>Main menu</h2>
 <ul style="list-style-type:none;">
-<li><a href="https://harrymkt.github.io" accesskey="H">Home</a></li>
-<li><a href="https://harrymkt.github.io/projects">Projects</a></li>
-<li><a href="https://harrymkt.github.io/blog" title="Read the latest news">Blog</a></li>
-<li><a href="https://harrymkt.github.io/community">Useful Communities</a></li>
-<li><a href="https://harrymkt.github.io/articles">Useful Articles</a></li>
+<li><a href="https://harrymkt.github.io">Home</a></li><li><a href="https://harrymkt.github.io/projects">Projects</a></li><li><a href="https://harrymkt.github.io/blog">Blog</a></li><li><a href="https://harrymkt.github.io/community">Useful Communities</a></li><li><a href="https://harrymkt.github.io/articles">Useful Articles</a></li>
 </ul>
 </nav>
-<main>
-<div id="mainc">
+<main id="mainc" data-pagefind-body>
 <h1 id="accessibility">Accessibility</h1>
 <p>I use the structure of the site clean and accessible as possible, especially with the visually impaired people. As I am a blind people, I implemented the accessibility of the site to be fully and responsive.</p>
 <h2 id="headings">Headings</h2>
@@ -42,7 +49,6 @@
 <h2 id="unability">Unability</h2>
 <p>I am unable to process the colour designs for the site, look and appearances are also included. This is because I can't see the colour, look and appearances do to the blindness.</p>
 <p>Therefore, although I have implemented CSS styles as possible, the look and appearances may not be accurate in some parts.</p>
-</div>
 </main>
 <div id="zlfooter">
 <aside>
@@ -73,5 +79,10 @@
 <script>addfooter();</script>
 </div>
 <script src="https://harrymkt.github.io/scripts/copy.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  new PagefindUI({ element: "#sitesearch", showSubResults: true });
+});
+</script>
 </body>
 </html>
