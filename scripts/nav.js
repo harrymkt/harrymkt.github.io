@@ -1,16 +1,5 @@
 function navstart()
 {
-// Create p element with id "fulldate"
-var fulldateElement = document.createElement("p");
-fulldateElement.id = "fulldate";
-
-// Create p element with id "greetings"
-var greetingsElement = document.createElement("p");
-greetingsElement.id = "greetings";
-
-// Append elements to the document body or any other target element
-document.body.appendChild(fulldateElement);
-document.body.appendChild(greetingsElement);
 displaytime();
 setInterval(displaytime, 1000);
 }//end
