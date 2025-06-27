@@ -1,79 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<baseurl href="https://harrymkt.github.io"/>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
 <script src="https://harrymkt.github.io/scripts/theme.js"></script>
+<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://harrymkt.github.io/articles/zola-vs-hugo/">
+<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
 <script src="https://harrymkt.github.io/scripts/functions.js"></script>
 <script src="https://harrymkt.github.io/scripts/all.js"></script>
 <script src="https://harrymkt.github.io/scripts/nav.js"></script>
 <script src="https://harrymkt.github.io/scripts/footer.js"></script>
-<link href="https://harrymkt.github.io/css/style.css">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Hugo VS Zola">
-<meta property="og:url" content="https://harrymkt.github.io/articles/zola-vs-hugo/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="<p>Hugo vs. Zola: Comparing Two Powerful Static Site Generators</p>">
-<meta name="twitter:title" content="Hugo VS Zola">
-<link rel="canonical" href="https://harrymkt.github.io/articles/zola-vs-hugo/">
-<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://harrymkt.github.io/css/style.css">
 <title>Hugo VS Zola – Articles – Harry Min Khant</title>
 </head>
 <body>
 <a href="https://harrymkt.github.io/config">Config Site</a>
-
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
-<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
-<p><a href="#zlfooter" class="skip-link">Skip to footer</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/pagefind/pagefind-ui.js"></script>
-<div id="sitesearch"></div>
-<p id="fulldate"></p>
+<div id="sitesearch"></div><p id="fulldate"></p>
 <p id="greetings"></p>
 <script>navstart();</script>
-
-<nav id="navigation" role="navigation" aria-label="Main menu">
-<h2>Main menu</h2>
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
 <ul style="list-style-type:none;">
-<li><a href="https://harrymkt.github.io">Home</a></li><li><a href="https://harrymkt.github.io/projects">Projects</a></li><li><a href="https://harrymkt.github.io/blog">Blog</a></li><li><a href="https://harrymkt.github.io/community">Useful Communities</a></li><li><a href="https://harrymkt.github.io/articles">Useful Articles</a></li>
+<li><a href="/">Home</a>
+</li>
+<li><a href="/projects/">Projects</a>
+</li>
+<li><a href="/blog/">Blog</a>
+</li>
+<li><a href="/community/">Useful Communities</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/articles/">Useful Articles</a>
+</li>
 </ul>
 </nav>
 <main id="mainc" data-pagefind-body>
-
 <h1>Hugo VS Zola</h1>
-<p>Author: Harry Min Khant</p>
-<p>Published on: <script>document.write(local_datetime_string('2024-11-22T14:05:00+06:30'));</script></p>
-<p>Total words: 881</p>
-<p>Reading time: 5minute</p>
+<p>Published on <script>document.write(local_datetime_string("2024-11-22 14:05:00 +0630 +0630"));</script></p>
+<p>856 words total</p>
+<p>5 minutes read</p>
 <br>
 <p>Hugo vs. Zola: Comparing Two Powerful Static Site Generators</p>
-<span id="continue-reading"></span>
 <p>Static site generators (SSGs) have become essential tools for developers looking to create fast, secure, and scalable websites without relying on traditional server-side rendering. Among the myriad options available, Zola and Hugo stand out as two of the most popular choices. Both are designed to turn content files into beautiful, pre-rendered websites, but they cater to slightly different audiences and workflows. Let’s delve into their features, strengths, and differences to help you decide which is right for your next project.</p>
-<hr />
+<hr>
 <h2 id="overview">Overview</h2>
 <h3 id="hugo">Hugo</h3>
 <p>Hugo is a high-performance static site generator written in Go. Known for its incredible speed, Hugo can handle thousands of pages and generate a complete site in milliseconds. It offers extensive theming options, powerful content organization, and a vibrant community.</p>
 <h3 id="zola">Zola</h3>
 <p>Zola is a relatively newer static site generator written in Rust. It focuses on simplicity and user experience, providing a streamlined toolchain without external dependencies. Zola aims to minimize setup complexity while offering robust features like support for modern templates and straightforward configuration. However, Zola's templating system is made to be easy as possible. With the extensibility and fewer files structure, Zola proves to be faster than Hugo, about 3 to 4 times.</p>
-<hr />
+<hr>
 <h2 id="key-features">Key Features</h2>
-<table><thead><tr><th>Feature</th><th>Hugo</th><th>Zola</th></tr></thead><tbody>
-<tr><td>Language</td><td>Go</td><td>Rust</td></tr>
-<tr><td>Setup</td><td>Binary executable; easy installation</td><td>Single binary, no external dependencies</td></tr>
-<tr><td>Speed</td><td>Fast</td><td>Blazing fast (Rust-powered)</td></tr>
-<tr><td>Template Engine</td><td>Go Template</td><td>Tera (inspired by Jinja2)</td></tr>
-<tr><td>Configuration</td><td>TOML, YAML, or JSON</td><td>TOML</td></tr>
-<tr><td>Multilingual Support</td><td>Excellent</td><td>Good</td></tr>
-<tr><td>Content Taxonomies</td><td>Highly customizable</td><td>Limited but adequate</td></tr>
-<tr><td>Themes</td><td>Large ecosystem with many free options</td><td>Smaller but growing collection</td></tr>
-<tr><td>Build Toolchain</td><td>Flexible but complex for some workflows</td><td>Simplified</td></tr>
-<tr><td>Templating</td><td>Hard to implement / extend</td><td>Easy to extend / implement, fewer files</td></tr>
-<tr><td>Updates</td><td>Regular updates possibly because of breaking changes</td><td>Not regular but stable.</td></tr>
-</tbody></table>
-<hr />
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Hugo</th>
+          <th>Zola</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Language</td>
+          <td>Go</td>
+          <td>Rust</td>
+      </tr>
+      <tr>
+          <td>Setup</td>
+          <td>Binary executable; easy installation</td>
+          <td>Single binary, no external dependencies</td>
+      </tr>
+      <tr>
+          <td>Speed</td>
+          <td>Fast</td>
+          <td>Blazing fast (Rust-powered)</td>
+      </tr>
+      <tr>
+          <td>Template Engine</td>
+          <td>Go Template</td>
+          <td>Tera (inspired by Jinja2)</td>
+      </tr>
+      <tr>
+          <td>Configuration</td>
+          <td>TOML, YAML, or JSON</td>
+          <td>TOML</td>
+      </tr>
+      <tr>
+          <td>Multilingual Support</td>
+          <td>Excellent</td>
+          <td>Good</td>
+      </tr>
+      <tr>
+          <td>Content Taxonomies</td>
+          <td>Highly customizable</td>
+          <td>Limited but adequate</td>
+      </tr>
+      <tr>
+          <td>Themes</td>
+          <td>Large ecosystem with many free options</td>
+          <td>Smaller but growing collection</td>
+      </tr>
+      <tr>
+          <td>Build Toolchain</td>
+          <td>Flexible but complex for some workflows</td>
+          <td>Simplified</td>
+      </tr>
+      <tr>
+          <td>Templating</td>
+          <td>Hard to implement / extend</td>
+          <td>Easy to extend / implement, fewer files</td>
+      </tr>
+      <tr>
+          <td>Updates</td>
+          <td>Regular updates possibly because of breaking changes</td>
+          <td>Not regular but stable.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 <h2 id="strengths-of-hugo">Strengths of Hugo</h2>
 <ol>
 <li>Speed:
@@ -85,7 +134,7 @@ With features like multilingual support, advanced taxonomies, and content types,
 <li>Community and Documentation
 Hugo has a large, active community and extensive documentation, making it easier for new users to find support and guidance.</li>
 </ol>
-<hr />
+<hr>
 <h2 id="strengths-of-zola">Strengths of Zola</h2>
 <ol>
 <li>Ease of Use
@@ -97,21 +146,42 @@ Unlike Hugo, which sometimes requires additional setup for themes or plugins, Zo
 <li>Fast
 Zola is fast, 3-4 times faster than Hugo.</li>
 </ol>
-<hr />
+<hr>
 <h2 id="weaknesses">Weaknesses</h2>
-<table><thead><tr><th>Weakness</th><th>Hugo</th><th>Zola</th></tr></thead><tbody>
-<tr><td>Complexity</td><td>Steep learning curve for Go Template</td><td>Limited ecosystem</td></tr>
-<tr><td>Dependency</td><td>Requires external dependencies for some themes</td><td>Smaller community</td></tr>
-<tr><td>Customization</td><td>Go Template can feel restrictive</td><td>Limited support for multilingual sites and taxonomies</td></tr>
-</tbody></table>
-<hr />
+<table>
+  <thead>
+      <tr>
+          <th>Weakness</th>
+          <th>Hugo</th>
+          <th>Zola</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Complexity</td>
+          <td>Steep learning curve for Go Template</td>
+          <td>Limited ecosystem</td>
+      </tr>
+      <tr>
+          <td>Dependency</td>
+          <td>Requires external dependencies for some themes</td>
+          <td>Smaller community</td>
+      </tr>
+      <tr>
+          <td>Customization</td>
+          <td>Go Template can feel restrictive</td>
+          <td>Limited support for multilingual sites and taxonomies</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 <h2 id="when-to-choose-hugo">When to Choose Hugo</h2>
 <ul>
 <li>You are building a large or complex site with diverse content types.</li>
 <li>You need advanced multilingual support or intricate taxonomy structures.</li>
 <li>You want access to a large ecosystem of themes and community resources.</li>
 </ul>
-<hr />
+<hr>
 <h2 id="when-to-choose-zola">When to Choose Zola</h2>
 <ul>
 <li>You value simplicity and a minimal setup process.</li>
@@ -121,7 +191,7 @@ Zola is fast, 3-4 times faster than Hugo.</li>
 <li>You want fewer files structure as possible.</li>
 <li>You need the ability to add custom plain HTML without any configuration and also don't want the HTML syntax to be escaped or replaced with special characters.</li>
 </ul>
-<hr />
+<hr>
 <h2 id="recommendation">Recommendation</h2>
 <ul>
 <li>Use Zola if you want to make your website fewer files structure as possible. Hugo requires higher number of files and folders.</li>
@@ -129,22 +199,18 @@ Zola is fast, 3-4 times faster than Hugo.</li>
 <li>Use Hugo if you want to have more features than what Zola has, and if you're ok with Go template layouts.</li>
 <li>Zola is recommended. While Hugo is being talked as the world's most popular and fast static site generator, its Go templating language makes it hard to learn Hugo.</li>
 </ul>
-<hr />
+<hr>
 <h2 id="potential-future">Potential Future</h2>
 <p>While Hugo is currently the world's most popular static site generator, Zola could become one of the world's most popular, easyer and friendlyer static site generators in the near future.</p>
-<hr />
+<hr>
 <h2 id="conclusion">Conclusion</h2>
 <p>Both Hugo and Zola are excellent static site generators, but they serve slightly different purposes. Hugo is the powerhouse for large, complex projects, offering unmatched speed and flexibility. Zola, on the other hand, is a user-friendly alternative that shines in simplicity and modernity. Your choice ultimately depends on your project’s requirements and your comfort with the underlying technologies. Whether you pick Zola or Hugo, you’ll be working with a robust tool that empowers you to build fast, reliable, and beautiful static websites.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://www.getzola.org/">Zola website</a></li>
-<li><a href="https://harrymkt.github.io/articles/zola-about/">All About Zola</a></li>
-<li><a href="https://harrymkt.github.io/articles/hugo-about/">All About Hugo</a></li>
+<li><a href="@/articles/zola-about.md">All About Zola</a></li>
+<li><a href="@/articles/hugo-about.md">All About Hugo</a></li>
 </ul>
-
-<nav aria-label="Page">
-<a href="https://harrymkt.github.io/articles/hugo-about/">Next page: All About Hugo</a>
-</nav>
 
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"
@@ -160,8 +226,9 @@ Zola is fast, 3-4 times faster than Hugo.</li>
         data-lang="en"
         crossorigin="anonymous"
         async>
-</script></main>
-<div id="zlfooter">
+</script>
+</main>
+<div id="hgfooter">
 <aside>
 <div class="beforefooter" id="footersection">
 <div id="cometome">
@@ -189,6 +256,7 @@ Zola is fast, 3-4 times faster than Hugo.</li>
 </aside>
 <script>addfooter();</script>
 </div>
+
 <script src="https://harrymkt.github.io/scripts/copy.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {

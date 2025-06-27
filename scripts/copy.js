@@ -1,7 +1,5 @@
 /*
 Js script that allows you to have the ability to copy code blocks.
-Built-in script for Zluinav which is distributed under the terms of the MIT License.
-In Zluinav block, this is placed under extrafoot block.
 */
 document.querySelectorAll("pre").forEach(pre => {
 	const code_block = pre.querySelector("code"); // Check if <code> exists inside <pre>

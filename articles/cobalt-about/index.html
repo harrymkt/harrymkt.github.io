@@ -1,58 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<baseurl href="https://harrymkt.github.io"/>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
 <script src="https://harrymkt.github.io/scripts/theme.js"></script>
+<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://harrymkt.github.io/articles/cobalt-about/">
+<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
 <script src="https://harrymkt.github.io/scripts/functions.js"></script>
 <script src="https://harrymkt.github.io/scripts/all.js"></script>
 <script src="https://harrymkt.github.io/scripts/nav.js"></script>
 <script src="https://harrymkt.github.io/scripts/footer.js"></script>
-<link href="https://harrymkt.github.io/css/style.css">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="All About Cobalt">
-<meta property="og:description" content="A static site generator written in Rust">
-<meta property="og:url" content="https://harrymkt.github.io/articles/cobalt-about/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="<p><a href="https://cobalt-org.github.io" title="Official website">Cobalt</a> is a static site generator written in Rust language powered by <a href="https://shopify.github.io/liquid">Liquid</a> as its templating engine.</p>">
-<meta name="twitter:title" content="All About Cobalt">
-<meta name="twitter:description" content="Description for Twitter users.">
-<link rel="canonical" href="https://harrymkt.github.io/articles/cobalt-about/">
-<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://harrymkt.github.io/css/style.css">
 <title>All About Cobalt – Articles – Harry Min Khant</title>
 </head>
 <body>
 <a href="https://harrymkt.github.io/config">Config Site</a>
-
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
-<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
-<p><a href="#zlfooter" class="skip-link">Skip to footer</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/pagefind/pagefind-ui.js"></script>
-<div id="sitesearch"></div>
-<p id="fulldate"></p>
+<div id="sitesearch"></div><p id="fulldate"></p>
 <p id="greetings"></p>
 <script>navstart();</script>
-
-<nav id="navigation" role="navigation" aria-label="Main menu">
-<h2>Main menu</h2>
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
 <ul style="list-style-type:none;">
-<li><a href="https://harrymkt.github.io">Home</a></li><li><a href="https://harrymkt.github.io/projects">Projects</a></li><li><a href="https://harrymkt.github.io/blog">Blog</a></li><li><a href="https://harrymkt.github.io/community">Useful Communities</a></li><li><a href="https://harrymkt.github.io/articles">Useful Articles</a></li>
+<li><a href="/">Home</a>
+</li>
+<li><a href="/projects/">Projects</a>
+</li>
+<li><a href="/blog/">Blog</a>
+</li>
+<li><a href="/community/">Useful Communities</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/articles/">Useful Articles</a>
+</li>
 </ul>
 </nav>
 <main id="mainc" data-pagefind-body>
-
 <h1>All About Cobalt</h1>
-<p>Author: Harry Min Khant</p>
-<p>Published on: <script>document.write(local_datetime_string('2024-09-06T22:03:00+06:30'));</script></p>
-<p>Total words: 523</p>
-<p>Reading time: 3minute</p>
+<p>Published on <script>document.write(local_datetime_string("2024-09-06 22:03:00 +0630 +0630"));</script></p>
+<p>489 words total</p>
+<p>3 minutes read</p>
 <br>
 <p><a href="https://cobalt-org.github.io" title="Official website">Cobalt</a> is a static site generator written in Rust language powered by <a href="https://shopify.github.io/liquid">Liquid</a> as its templating engine.</p>
-<span id="continue-reading"></span>
 <p>It is one of the well-known static site generators available today, designed to be easy, flexible, and lightweight. You write your site's content in Markdown, and Cobalt will build the site for you as HTML files, ready to be served on your server. While other static site generators are available, they are not as simple as Cobalt, which requires no additional libraries to install. This makes it a perfect, time-saving solution for speed, stability, clean layouts, and ease of use.</p>
 <h2 id="features">Features</h2>
 <ul>
@@ -67,7 +61,7 @@
 Make sure to create a folder named <strong>cobalt</strong> in a suitable location on your disk, typically where you plan to store the Cobalt executable. Place all files in this folder; only <strong>cobalt.exe</strong> is required, while other files and folders are optional.</p>
 <p>On Windows, it is recommended to add the cobalt executable to the environment variable.</p>
 <ol>
-<li>Search for "Environment" in the Start menu and click on <strong>Edit the system environment variables</strong>.</li>
+<li>Search for &quot;Environment&quot; in the Start menu and click on <strong>Edit the system environment variables</strong>.</li>
 <li>In the System Properties window, click <strong>Environment Variables</strong>, then click <strong>New</strong>.</li>
 <li>In the Variable name field, type <code>cobalt</code> or any name you prefer. This will be used to interact with Cobalt.</li>
 <li>Click <strong>Browse File</strong>, and select the Cobalt executable file.</li>
@@ -80,16 +74,11 @@ Make sure to create a folder named <strong>cobalt</strong> in a suitable locatio
 <p>You are now in the Command Prompt window. We will refer to this as the Command Prompt window, so make sure to remember how to access it as described in the steps above.</p>
 <h3 id="init">init</h3>
 <p>Type the following command in your Command Promt window.</p>
-<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">%cobalt% init
+<pre><code class="language-bash">%cobalt% init
 </code></pre>
 <p>Output:</p>
 <p>Created new project at ./</p>
 <p>For more information on its usage, please visit the official website above.</p>
-
-<nav aria-label="Page">
-<a href="https://harrymkt.github.io/articles/zola-about/">Previous page: All About Zola</a>
-<a href="https://harrymkt.github.io/articles/free-web-host-providers/">Next page: Free web hosting providers</a>
-</nav>
 
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"
@@ -105,8 +94,9 @@ Make sure to create a folder named <strong>cobalt</strong> in a suitable locatio
         data-lang="en"
         crossorigin="anonymous"
         async>
-</script></main>
-<div id="zlfooter">
+</script>
+</main>
+<div id="hgfooter">
 <aside>
 <div class="beforefooter" id="footersection">
 <div id="cometome">
@@ -134,6 +124,7 @@ Make sure to create a folder named <strong>cobalt</strong> in a suitable locatio
 </aside>
 <script>addfooter();</script>
 </div>
+
 <script src="https://harrymkt.github.io/scripts/copy.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {

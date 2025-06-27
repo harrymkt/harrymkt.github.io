@@ -1,59 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<baseurl href="https://harrymkt.github.io"/>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
 <script src="https://harrymkt.github.io/scripts/theme.js"></script>
+<link rel="stylesheet" href="https://harrymkt.github.io/css/theme.css">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://harrymkt.github.io/articles/zola-about/">
+<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
 <script src="https://harrymkt.github.io/scripts/functions.js"></script>
 <script src="https://harrymkt.github.io/scripts/all.js"></script>
 <script src="https://harrymkt.github.io/scripts/nav.js"></script>
 <script src="https://harrymkt.github.io/scripts/footer.js"></script>
-<link href="https://harrymkt.github.io/css/style.css">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="All About Zola">
-<meta property="og:description" content="A static site generator written in Rust">
-<meta property="og:url" content="https://harrymkt.github.io/articles/zola-about/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="<p><a href="https://getzola.org/" title="Official website">Zola</a> is a static site generator written in Rust language powered by <a href="https://keats.github.io/tera/">Tera</a> as its templating engine.</p>">
-<meta name="twitter:title" content="All About Zola">
-<meta name="twitter:description" content="Description for Twitter users.">
-<link rel="canonical" href="https://harrymkt.github.io/articles/zola-about/">
-<link rel="icon" href="https://harrymkt.github.io/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://harrymkt.github.io/css/style.css">
 <title>All About Zola – Articles – Harry Min Khant</title>
 </head>
 <body>
 <a href="https://harrymkt.github.io/config">Config Site</a>
-
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
-<p><a href="#navigation" class="skip-link">Skip to navigation</a></p>
-<p><a href="#zlfooter" class="skip-link">Skip to footer</a></p>
+<p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
+<p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
 <link href="https://harrymkt.github.io/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="https://harrymkt.github.io/pagefind/pagefind-ui.js"></script>
-<div id="sitesearch"></div>
-<p id="fulldate"></p>
+<div id="sitesearch"></div><p id="fulldate"></p>
 <p id="greetings"></p>
 <script>navstart();</script>
-
-<nav id="navigation" role="navigation" aria-label="Main menu">
-<h2>Main menu</h2>
+<nav id="navigation" role="navigation" aria-label="Main Menu">
+<h2>Main Menu</h2>
 <ul style="list-style-type:none;">
-<li><a href="https://harrymkt.github.io">Home</a></li><li><a href="https://harrymkt.github.io/projects">Projects</a></li><li><a href="https://harrymkt.github.io/blog">Blog</a></li><li><a href="https://harrymkt.github.io/community">Useful Communities</a></li><li><a href="https://harrymkt.github.io/articles">Useful Articles</a></li>
+<li><a href="/">Home</a>
+</li>
+<li><a href="/projects/">Projects</a>
+</li>
+<li><a href="/blog/">Blog</a>
+</li>
+<li><a href="/community/">Useful Communities</a>
+</li>
+<li><a aria-current="true" class="ancestor" href="/articles/">Useful Articles</a>
+</li>
 </ul>
 </nav>
 <main id="mainc" data-pagefind-body>
-
 <h1>All About Zola</h1>
-<p>Updated on: <script>document.write(local_datetime_string('2024-10-05T13:00:00+06:30'));</script></p>
-<p>Author: Harry Min Khant</p>
-<p>Published on: <script>document.write(local_datetime_string('2024-10-02T22:00:00+06:30'));</script></p>
-<p>Total words: 709</p>
-<p>Reading time: 4minute</p>
+<p>Updated on <script>document.write(local_datetime_string("2024-10-05 13:00:00 +0630 +0630"));</script></p>
+<p>Published on <script>document.write(local_datetime_string("2024-10-02 22:00:00 +0630 +0630"));</script></p>
+<p>660 words total</p>
+<p>4 minutes read</p>
 <br>
 <p><a href="https://getzola.org/" title="Official website">Zola</a> is a static site generator written in Rust language powered by <a href="https://keats.github.io/tera/">Tera</a> as its templating engine.</p>
-<span id="continue-reading"></span>
 <p>It is one of the well-known static site generators available today, designed to be easy, flexible, and lightweight. You write your site's content in Markdown, and Zola will build the site for you as HTML files, ready to be served on your server. While other static site generators are available, they are not as simple as Zola, which requires no additional libraries to install. This makes it a perfect, time-saving solution for speed, stability, clean layouts, and ease of use.</p>
 <h2 id="features">Features</h2>
 <ul>
@@ -72,7 +66,7 @@
 Make sure to create a folder named <strong>zola</strong> in a suitable location on your disk, typically where you plan to store the Zola executable. Place all files in this folder; only <strong>zola.exe</strong> is required, while other files and folders are optional.</p>
 <p>On Windows, it is recommended to add the zola executable to the environment variable.</p>
 <ol>
-<li>Search for "Environment" in the Start menu and click on <strong>Edit the system environment variables</strong>.</li>
+<li>Search for &quot;Environment&quot; in the Start menu and click on <strong>Edit the system environment variables</strong>.</li>
 <li>In the System Properties window, click <strong>Environment Variables</strong>, then click <strong>New</strong>.</li>
 <li>In the Variable name field, type <code>zola</code> or any name you prefer. This will be used to interact with Zola.</li>
 <li>Click <strong>Browse File</strong>, and select the Zola executable file.</li>
@@ -85,12 +79,12 @@ Make sure to create a folder named <strong>zola</strong> in a suitable location 
 <p>You are now in the Command Prompt window. We will refer to this as the Command Prompt window, so make sure to remember how to access it as described in the steps above.</p>
 <h3 id="init">init</h3>
 <p>Type the following command in your Command Promt window.</p>
-<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">%zola% init mysite
+<pre><code class="language-bash">%zola% init mysite
 </code></pre>
 <p>Replace mysite with your site name</p>
 <p>You will be asked a few questions.</p>
 <ul>
-<li>What is the URL of your site? (https://example.com):</li>
+<li>What is the URL of your site? (<a href="https://example.com">https://example.com</a>):</li>
 <li>Do you want to enable Sass compilation? [Y/n]:</li>
 <li>Do you want to enable syntax highlighting? [y/N]:</li>
 <li>Do you want to build a search index of the content? [y/N]:</li>
@@ -98,11 +92,6 @@ Make sure to create a folder named <strong>zola</strong> in a suitable location 
 <p>For more information on its usage, please visit the official website above.</p>
 <h2 id="themes">Themes</h2>
 <p>Well well well, here is the theme I created if you want to use it for accessibility. <a href="https://github.com/harrymkt/zluinav">Zluinav</a></p>
-
-<nav aria-label="Page">
-<a href="https://harrymkt.github.io/articles/hugo-about/">Previous page: All About Hugo</a>
-<a href="https://harrymkt.github.io/articles/cobalt-about/">Next page: All About Cobalt</a>
-</nav>
 
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"
@@ -118,8 +107,9 @@ Make sure to create a folder named <strong>zola</strong> in a suitable location 
         data-lang="en"
         crossorigin="anonymous"
         async>
-</script></main>
-<div id="zlfooter">
+</script>
+</main>
+<div id="hgfooter">
 <aside>
 <div class="beforefooter" id="footersection">
 <div id="cometome">
@@ -147,6 +137,7 @@ Make sure to create a folder named <strong>zola</strong> in a suitable location 
 </aside>
 <script>addfooter();</script>
 </div>
+
 <script src="https://harrymkt.github.io/scripts/copy.js"></script>
 <script>
 window.addEventListener('DOMContentLoaded', (event) => {
