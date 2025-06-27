@@ -1,0 +1,22 @@
+{{- define "main" }}
+<h1>{{ .LinkTitle }}</h1>
+{{- if .Params.projects }}
+{{- $plength := len .Params.projects }}
+<p>There {{ cond (eq $plength 1) "is" "are" }} {{ $plength }} project{{ if ne $plength 1 }}s{{ end }} available</p>
+
+{{- range .Params.projects }}
+<h2><a href="{{ .url | safeURL }}">{{ .name }}</a></h2>
+<p>Type: {{ .type }}</p>
+<p>Status: {{ .status }}</p>
+{{- if .description }}
+<br>
+<div>
+{{ .description | markdownify }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- else }}
+<p>No projects available</p>
+{{- end }}
+{{- end }}

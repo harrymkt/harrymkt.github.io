@@ -1,6 +1,7 @@
-{%- extends "zluinav/templates/blogpage.html" %}
-{%- block main %}
-{{- super() }}
+{{ (partial "content.html" (dict "value" .Content "page" . )) | safeHTML }}
+
+{{- partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
 <script src="https://giscus.app/client.js"
         data-repo="harrymkt/harrymkt.github.io"
         data-repo-id="R_kgDOLG3Hdg"
@@ -16,4 +17,3 @@
         crossorigin="anonymous"
         async>
 </script>
-{%- endblock content %}

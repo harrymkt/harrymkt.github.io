@@ -1,5 +1,5 @@
 +++
-updated = 2024-11-22T15:33:00+06:30
+lastmod = 2025-06-27T19:12:00+06:30
 title = "Useful Communities"
 +++
 # Useful communities
@@ -18,4 +18,4 @@ This channel shares audio Plugins and Softwares and primarily focused on accessi
 ### The World Of People
 <a href="https://t.me/pworldmbh" target="_blank">Join on Telegram (Opens in a new tab)</a>
 
-This is a chatting group, with 170+ active members at the time of writing on %updated%. You can talk about everything here.
+This is a chatting group, with 195+ active members at the time of writing on %updated%. You can talk about everything here.

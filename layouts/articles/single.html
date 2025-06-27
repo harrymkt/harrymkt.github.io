@@ -1,0 +1,16 @@
+{{- define "title" -}}
+{{- partial "title.html" (dict "titles" (slice .Title .FirstSection.Title) ) -}}
+{{- end -}}
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{- partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
+{{- if ne .Lastmod .Date }}
+<p>{{ T "lastmod" (partial "content.html" (dict "page" . "value" "%updated%")) | safeHTML }}</p>
+{{- end }}
+<p>{{ T "published_on" (partial "content.html" (dict "page" . "value" "%date%")) | safeHTML }}</p>
+{{- partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+<p>{{ T "totalwords" .WordCount }}</p>
+<p>{{ T "totaltime" .ReadingTime }}</p>
+<br>
+{{ .Render "content" }}
+{{- end }}

@@ -51,5 +51,5 @@ Choosing the best provider will depend entirely on your specific requirements an
 * Choose GitHub if you want a reliable uptime experience, faster web load times, and are comfortable with your content being visible to the public.
 * Choose GitHub if you want to automate your builds, write in Markdown files for deployment, and don’t require a database. You can utilize static site generators to build and deploy your site automatically.
 * Choose InfinityFree if you want to keep your content hidden from the public, utilize CMS software, work with databases, and use server-side languages like PHP. It offers 5 GB of storage space for free, with the option to upgrade to premium plans for additional features.
-	
-	You can also use GitHub to build your website through a static site generator, and then have the FTP GitHub action uploaded to the server using FTP, with addition of GitHub's secrets feature to securely store usernames and passwords.
+
+You can also use GitHub to build your website through a static site generator, and then have the FTP GitHub action uploaded to the server using FTP, with addition of GitHub's secrets feature to securely store usernames and passwords.
