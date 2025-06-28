@@ -69,47 +69,41 @@
 </fieldset>
 </form>
 <script>
-function startform()
-{
-var tf=localStorage.getItem("timeformat");
-if(tf!=="12") tf="24";
-document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
-var vu=localStorage.getItem("visitname");
-if(vu==="" || vu===null) vu="visiter";
-document.getElementById("visitname").textContent="Current name, "+vu;
+function startform() {
+	var tf = localStorage.getItem("timeformat");
+	if (tf !== "12") tf = "24";
+	document.getElementById("timeformat").textContent = "Current time format, " + tf + " hour format";
+	var vu = localStorage.getItem("visitname");
+	if (vu === "" || vu === null) vu = "visiter";
+	document.getElementById("visitname").textContent = "Current name, "+vu;
 }
 startform();
-function formsub()
-{
-let o=0;
-var tf=document.getElementById("timeformatinp").value;
-if(tf!==null && tf!=="")
-{
-if(tf!=="12") tf="24";
-localStorage.setItem("timeformat",tf);
-document.getElementById("timeformat").textContent="Current time format, "+tf+" hour format";
-o++;
-}
-var vu=document.getElementById("visitnameinp").value;
-if(vu!==null && vu!=="")
-{
-if(vu==="" || vu==null) vu="visiter";
-localStorage.setItem("visitname",vu);
-document.getElementById("visitname").textContent="Current name, "+vu;
-o++
-}
-var msg=(o>0?o+" options saved":"options unchanged");
-alert(msg);
+function formsub() {
+	let o = 0;
+	var tf = document.getElementById("timeformatinp").value;
+	if (tf !== null && tf !== "") {
+		if (tf !== "12") tf = "24";
+		localStorage.setItem("timeformat", tf);
+		document.getElementById("timeformat").textContent = "Current time format, " + tf + " hour format";
+		o++;
+	}
+	var vu = document.getElementById("visitnameinp").value;
+	if (vu !== null && vu !== "") {
+		if (vu === "" || vu == null) vu = "visiter";
+		localStorage.setItem("visitname", vu);
+		document.getElementById("visitname").textContent = "Current name, " + vu;
+		o++
+	}
+	var msg = (o > 0 ? o + " options saved" : "options unchanged");
+	alert(msg);
 }//end.function
-function removeallcf()
-{
-if(confirm("Are you sure you want to remove all configurations saved on this site? This cannot be undone"))
-{
-localStorage.clear();
-startform();
-var msg="All the site configurations have been cleared.";
-alert(msg);
-}
+function removeallcf() {
+	if (confirm("Are you sure you want to remove all configurations saved on this site? This cannot be undone")) {
+		localStorage.clear();
+		startform();
+		var msg = "All the site configurations have been cleared.";
+		alert(msg);
+	}
 }
 </script>
 </main>
