@@ -2,6 +2,7 @@
 date = 2024-09-04T22:30:00+06:30
 description = "Best free hosting providers at all times!"
 title = "Free web hosting providers"
+keywords = ["web", "generator", "host", "GitHub"]
 +++
 Do you want to get your website up and running but can't find free hosting services and don’t want to spend a lot of money? Look no further!
 <!--more-->

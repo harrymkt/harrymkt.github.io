@@ -1,6 +1,7 @@
 +++
 date = 2024-11-22T14:05:00+06:30
 title = "Hugo VS Zola"
+keywords = ["Zola", "Hugo", "web", "generator"]
 +++
 Hugo vs. Zola: Comparing Two Powerful Static Site Generators
 <!--more-->

@@ -14,8 +14,8 @@ These general rules are available in all comunities
 The first rule to follow is to avoid spamming. Spamming is strictly prohibited, and if you engage in spamming, you will be warned. Continued spamming after receiving multiple warnings will result in consequences, the severity of which will depend on the specific circumstances.
 
 Spamming includes:
-* Sending messages that contains random characters
-* Sending either screen reader crash codes or codes that can crash the client nor the device.
+- Sending messages that contains random characters
+- Sending either screen reader crash codes or codes that can crash the client nor the device.
 
 While it is impossible to list all possible forms of spamming, it is important to note that if an administrator instructs you to stop spamming, you are expected to comply. Failure to follow their instructions may lead to consequences, which will be determined based on the severity of the situation.
 
@@ -33,8 +33,8 @@ You will not speak in other language accept from the list above, or you will get
 
 ### Posting contents
 Posting contents in the community is to post about games, projects, things that about visually impaired, and all forms of technical, you can post whatever you want. However, some contents will never be allowed to post. All of my communities do not have place for those contents to live. They are:
-* Post links to porn, murders, or any other adult rated material.
-* Post messages, that are, or contain portions that are, racistic, vulgar, disrespectful to culture or religion or ethnicity...
+- Post links to porn, murders, or any other adult rated material.
+- Post messages, that are, or contain portions that are, racistic, vulgar, disrespectful to culture or religion or ethnicity...
 
 If you are found to be sending the aforementioned content, there will be consequences depending on the severity, which may include temporary or permanent bans. In the case of Telegram, we may contact Telegram officials to request the deletion of your account.
 

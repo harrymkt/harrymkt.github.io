@@ -1,5 +1,5 @@
 +++
-updated = 2024-10-05T13:00:00+06:30
+lastmod = 2024-10-05T13:00:00+06:30
 title = "Privacy Policy"
 +++
 # Privacy Policy
