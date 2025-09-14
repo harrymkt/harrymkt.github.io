@@ -1,6 +1,8 @@
 +++
 layout = "projects"
 title = "Projects"
+[menu.main]
+	weight = 20
 [params]
 	[[params.projects]]
 		description = "An offline set of many mini games bundled into 1 game for visually impaired"

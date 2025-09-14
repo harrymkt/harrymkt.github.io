@@ -1,6 +1,8 @@
 +++
-lastmod = 2025-06-27T19:12:00+06:30
+lastmod = "2025-09-14T20:00:00+06:30"
 title = "Useful Communities"
+[menu.main]
+	weight = 40
 +++
 # Useful communities
 This is a list of useful and helpful communities. |Have a look!

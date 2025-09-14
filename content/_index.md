@@ -1,5 +1,7 @@
 +++
 title = "Home"
+[menu.main]
+	wait = 10
 +++
 # Welcome
 <p id="welcomep">
