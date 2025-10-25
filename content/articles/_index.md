@@ -3,7 +3,7 @@ title = "Articles"
 pagesize = 10
 sort_by = "Lastmod"
 [menu.main]
-	weight = 50
+	weight = 400
 [taxonomies]
 	category = "categories"
 +++
