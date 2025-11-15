@@ -1,7 +1,7 @@
 +++
 title = "Home"
 [menu.main]
-	wait = 1
+	weight = 1
 +++
 # Welcome
 <p id="welcomep">
