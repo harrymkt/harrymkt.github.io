@@ -13,10 +13,10 @@
 <script src="https://harrymkt.github.io/scripts/nav.js"></script>
 <script src="https://harrymkt.github.io/scripts/footer.js"></script>
 <link rel="stylesheet" href="https://harrymkt.github.io/css/style.css">
-<title>Config – Harry Min Khant</title>
+<title>Site Configuration – Harry Min Khant</title>
 </head>
 <body>
-<a href="https://harrymkt.github.io/config">Config Site</a>
+<a href="https://harrymkt.github.io/config">Configure Site</a>
 <p><a href="#mainc" class="skip-link">Skip to main content</a></p>
 <p><a href="#navigation" class="skip-link">Skip to navigation menu</a></p>
 <p><a href="#hgfooter" class="skip-link">Skip to footer</a></p>
@@ -42,30 +42,30 @@
 </nav>
 
 <main id="mainc" data-pagefind-body>
-<h1 id="site-configuration">Site configuration</h1>
+<h1 id="site-configuration">Site Configuration</h1>
 <p>Here you can change the preferences for the site.</p>
 <form>
 <fieldset>
-<legend><h2>Time format</h2></legend>
+<legend><h2>Time Format</h2></legend>
 <p>The time format is the format that will be used to display the date and time which you can find at the top of any page.</p>
 <p id="timeformat"></p>
-<label for="timeformatinp">Choose time format</label>
-<select name="labeltf" id="timeformatinp" placeholder="Choose time format" value="Choose">
+<label for="timeformatinp">Choose the time format that will be used</label>
+<select name="labeltf" id="timeformatinp" placeholder="Choose the time format" value="">
 <option value="">Select format</option>
-<option select value="12">12 hour</option>
-<option select value="24">24 hour</option>
+<option select value="12">12 hour format</option>
+<option select value="24">24 hour format</option>
 </select>
 </fieldset>
 <fieldset>
-<legend><h2>Visiter name for the site</h2></legend>
+<legend><h2>Visiter Name for the Site</h2></legend>
 <p>The visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
 <p id="visitname"></p>
 <label for="visitnameinp">Enter your name that will be used on the site</label>
 <input id="visitnameinp" type="text" placeholder="Enter your name to use"></input>
 </fieldset>
-<p><input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input></p>
+<p><input type="submit" onclick="formsub();" placeholder="Save" value="Save configurations"></input></p>
 <fieldset>
-<legend><h2>Reset config</h2></legend>
+<legend><h2>Reset Configurations</h2></legend>
 <input type="button" onclick="removeallcf();" placeholder="Remove all configs" value="Remove all config"></input>
 </fieldset>
 </form>
@@ -112,21 +112,21 @@ function removeallcf() {
 <aside>
 <div class="beforefooter" id="footersection">
 <div id="cometome">
-<h2>Come to me</h2>
+<h2>Come to Me</h2>
 <p>If you want to send a message and get in touch with me, check out below.</p>
-<ul>
+<ul style="list-style-type:none;">
 <li><a href="https://facebook.com/harry.mk.64">Add friend / follow on Facebook</a></li>
 <li><a href="https://t.me/harrymkt">Message on Telegram</a></li>
 </ul>
 </div>
-<h2>Keep in touch with me</h2>
+<h2>Keep in Touch With Me</h2>
 <p>Don't let miss anything from me!</p>
-<ul>
+<ul style="list-style-type:none;">
 <li><a href="https://github.com/harrymkt">My GitHub</a></li>
 <li><a href="https://youtube.com/@harry_mk">Subscribe to my YouTube Channel</a></li>
 <li><a href="https://t.me/harrymktg">My Telegram Channel</a></li>
 </ul>
-<h2>Useful links</h2>
+<h2>Useful Links</h2>
 <a href="https://harrymkt.github.io/about">About me</a>
 <a href="https://harrymkt.github.io/contact">Contact me</a>
 <a href="https://harrymkt.github.io/community-policy">Community Policy</a>

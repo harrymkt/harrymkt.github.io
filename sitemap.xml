@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://harrymkt.github.io/</loc>
-    <lastmod>2025-09-14T20:00:00+06:30</lastmod>
+    <lastmod>2025-12-28T22:10:00+06:30</lastmod>
   </url><url>
     <loc>https://harrymkt.github.io/community/</loc>
-    <lastmod>2025-09-14T20:00:00+06:30</lastmod>
+    <lastmod>2025-12-28T22:10:00+06:30</lastmod>
+  </url><url>
+    <loc>https://harrymkt.github.io/community-policy/</loc>
+    <lastmod>2025-12-28T22:00:00+06:30</lastmod>
   </url><url>
     <loc>https://harrymkt.github.io/articles/</loc>
     <lastmod>2024-11-22T14:05:00+06:30</lastmod>
@@ -16,9 +19,6 @@
   </url><url>
     <loc>https://harrymkt.github.io/articles/hugo-about/</loc>
     <lastmod>2024-11-18T17:43:00+06:30</lastmod>
-  </url><url>
-    <loc>https://harrymkt.github.io/community-policy/</loc>
-    <lastmod>2024-10-05T13:00:00+06:30</lastmod>
   </url><url>
     <loc>https://harrymkt.github.io/privacy/</loc>
     <lastmod>2024-10-05T13:00:00+06:30</lastmod>
@@ -44,11 +44,11 @@
   </url><url>
     <loc>https://harrymkt.github.io/categories/</loc>
   </url><url>
-    <loc>https://harrymkt.github.io/config/</loc>
-  </url><url>
     <loc>https://harrymkt.github.io/contact/</loc>
   </url><url>
     <loc>https://harrymkt.github.io/projects/</loc>
+  </url><url>
+    <loc>https://harrymkt.github.io/config/</loc>
   </url><url>
     <loc>https://harrymkt.github.io/tags/</loc>
   </url>
