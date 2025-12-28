@@ -8,12 +8,12 @@ At Harry Min Khant, I am committed to protecting your privacy. This privacy poli
 Last updated: %updated%.
 
 Terms used:
-* I, me, my: Refers to Harry Min Khant, the owner of this website.
-* You, your: Refers to <script>document.write(get_storage('visitname', 'visitor'));</script>
+- I, me, my: Refers to Harry Min Khant, the owner of this website.
+- You, your: Refers to <script>document.write(get_storage('visitname', 'visitor'));</script>
 
 ## Collection of Information
 I may collect the following personal information:
-* When you visit my website, your IP address is logged by GitHub, whether you have signed in to GitHub or not. This site is hosted on GitHub pages, and their privacy policy explains that the visitor's IP address is logged regardless of that visitor is signed in to GitHub or not.
+- When you visit my website, your IP address is logged by GitHub, whether you have signed in to GitHub or not. This site is hosted on GitHub pages, and their privacy policy explains that the visitor's IP address is logged regardless of that visitor is signed in to GitHub or not.
 
 ## Use of Information
 I use the personal information I collect to provide you with technical support, projects, and other offerings, and to communicate with you regarding my services. I may also use your information to improve my services and offerings, and to personalize your experience.

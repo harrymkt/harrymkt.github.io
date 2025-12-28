@@ -11,6 +11,6 @@ You can use Headings to navigate around each section. For example, each game is 
 You can use lists to navigate, for example, in navigation menu.
 
 ## Unability
-I am unable to process the colour designs for the site, look and appearances are also included. This is because I can't see the colour, look and appearances do to the blindness.
+I am unable to process the colour designs for the site, look and appearances are also included. This is because I can't see the colour, look and appearances due to the blindness.
 
 Therefore, although I have implemented CSS styles as possible, the look and appearances may not be accurate in some parts.

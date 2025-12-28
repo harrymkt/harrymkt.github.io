@@ -1,32 +1,32 @@
 +++
-title = "Config"
+title = "Site Configuration"
 +++
-# Site configuration
+# Site Configuration
 Here you can change the preferences for the site.
 
 <form>
 <fieldset>
-<legend><h2>Time format</h2></legend>
+<legend><h2>Time Format</h2></legend>
 <p>The time format is the format that will be used to display the date and time which you can find at the top of any page.</p>
 <p id="timeformat"></p>
-<label for="timeformatinp">Choose time format</label>
-<select name="labeltf" id="timeformatinp" placeholder="Choose time format" value="Choose">
+<label for="timeformatinp">Choose the time format that will be used</label>
+<select name="labeltf" id="timeformatinp" placeholder="Choose the time format" value="">
 <option value="">Select format</option>
-<option select value="12">12 hour</option>
-<option select value="24">24 hour</option>
+<option select value="12">12 hour format</option>
+<option select value="24">24 hour format</option>
 </select>
 </fieldset>
 <fieldset>
-<legend><h2>Visiter name for the site</h2></legend>
+<legend><h2>Visiter Name for the Site</h2></legend>
 <p>The visiter's name is the name that will be used in name calling, such as in privacy policy section of greetings message at the top of any page.</p>
 <p id="visitname"></p>
 <label for="visitnameinp">Enter your name that will be used on the site</label>
 <input id="visitnameinp" type="text" placeholder="Enter your name to use"></input>
 </fieldset>
 
-<input type="submit" onclick="formsub();" placeholder="Save" value="Save"></input>
+<input type="submit" onclick="formsub();" placeholder="Save" value="Save configurations"></input>
 <fieldset>
-<legend><h2>Reset config</h2></legend>
+<legend><h2>Reset Configurations</h2></legend>
 <input type="button" onclick="removeallcf();" placeholder="Remove all configs" value="Remove all config"></input>
 </fieldset>
 </form>
