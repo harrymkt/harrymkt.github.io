@@ -60,7 +60,7 @@ function formsub() {
 	alert(msg);
 }//end.function
 function removeallcf() {
-	if (confirm("Are you sure you want to remove all configurations saved on this site? This cannot be undone")) {
+	if (confirm("Are you sure you want to remove all configurations saved on this site? This is irreversible!")) {
 		localStorage.clear();
 		startform();
 		var msg = "All the site configurations have been cleared.";

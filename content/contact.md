@@ -1,11 +1,11 @@
 +++
-title = "Contact"
+title = "Contact Me"
 +++
-# Contact
+# Contact Me
 You can contact me with the following:
 
 ## Telegram
-This is the recommended option if you have it. Send me message at <a href="https://t.me/harrymkt">harrymkt</a>.
+This is the most reliable and recommended option if you have it. Send me message at <a href="https://t.me/harrymkt">harrymkt</a>.
 
 ## Email
 You can contact me at harrymk64@gmail.com.

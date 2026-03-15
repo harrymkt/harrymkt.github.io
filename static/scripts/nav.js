@@ -1,9 +1,9 @@
 function navstart() {
 	displaytime();
 	setInterval(displaytime, 1000);
-}//end
+}
 function displaytime() {
-	//declare a date to display at the top.
+	// Declare a date to display at the top.
 	const dates = new Date();
 	const options = {
 		weekday: "long", 
@@ -46,4 +46,4 @@ function displaytime() {
 	if (ownernameElement) {
 		ownernameElement.textContent = ownername;
 	}
-}//end of nav
+}

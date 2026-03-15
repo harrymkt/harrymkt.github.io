@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "About Me"
 +++
 # About Me
 <p id="myfirst"></p>

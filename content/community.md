@@ -1,5 +1,5 @@
 +++
-lastmod = "2025-12-28T22:10:00+06:30"
+lastmod = "2026-03-15T17:45:00+06:30"
 title = "Useful Communities"
 [menu.main]
 	weight = 300
@@ -17,7 +17,7 @@ This is the list of communities that are all owned by me
 
 This channel shares audio Plugins and tools and primarily focused on accessibility.
 
-### The World Of People
-<a href="https://t.me/pworldmbh" target="_blank">Join on Telegram (Opens in a new tab)</a>
+### Inclusive Community Lab
+<a href="https://t.me/inclab" target="_blank">Join on Telegram (Opens in a new tab)</a>
 
-This is a chatting group, with 230+ active members at the time of writing on %updated%. You can talk about everything here.
+This is a chatting group, with 220+ active members at the time of writing on %updated%. You can talk about everything here.

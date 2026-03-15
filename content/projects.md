@@ -13,7 +13,7 @@ title = "Projects"
 	[[params.projects]]
 		description = "This theme is for static site generator called Zola. Read more about [Zola](@/articles/zola-about.md) in the Useful Articles section."
 		name = "ZL UI Navigation"
-		status = "released"
+		status = "released - not in constant development"
 		type = "Theme, Open Source"
 		url = "https://github.com/harrymkt/zluinav"
 	[[params.projects]]

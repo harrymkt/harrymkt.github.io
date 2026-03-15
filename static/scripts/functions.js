@@ -44,14 +44,11 @@ async function get_gh_asset_info(owner, repo, assetName, tag = "latest") {
 
 	try {
 		const response = await fetch(url);
-		
 		if (!response.ok) {
 			return null;
 		}
-
 		const data = await response.json();
 		const asset = data.assets.find(a => a.name === assetName);
-
 		return asset || null;  // Return the asset object if found, otherwise null
 	} catch (error) {
 		return null;
