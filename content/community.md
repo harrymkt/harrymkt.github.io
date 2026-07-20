@@ -20,4 +20,4 @@ This channel shares audio Plugins and tools and primarily focused on accessibili
 ### Inclusive Community Lab
 <a href="https://t.me/inclab" target="_blank">Join on Telegram (Opens in a new tab)</a>
 
-This is a chatting group, with 220+ active members at the time of writing on %updated%. You can talk about everything here.
+This is a chatting group, with 120+ active members at the time of writing on %updated%. You can talk about everything here.

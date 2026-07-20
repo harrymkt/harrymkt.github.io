@@ -11,17 +11,17 @@ title = "Projects"
 		type = "Game"
 		url = "https://gamemgh.github.io"
 	[[params.projects]]
-		description = "This theme is for static site generator called Zola. Read more about [Zola](@/articles/zola-about.md) in the Useful Articles section."
-		name = "ZL UI Navigation"
-		status = "released - not in constant development"
-		type = "Theme, Open Source"
-		url = "https://github.com/harrymkt/zluinav"
-	[[params.projects]]
-		description = "This theme is for static site generator called Hugo. Read more about [Hugo](@/articles/hugo-about.md) in the Useful Articles section."
+		description = "This theme is for static site generator called Hugo. Read more about [Hugo]({{% ref \"/articles/hugo-about.md\" %}}) in the Useful Articles section."
 		name = "HG UI Navigation"
 		status = "released"
 		type = "Theme, Open Source"
 		url = "https://github.com/harrymkt/hguinav"
+	[[params.projects]]
+		description = "This theme is for static site generator called Zola. Read more about [Zola]({{% ref \"/articles/zola-about.md\" %}}) in the Useful Articles section."
+		name = "ZL UI Navigation"
+		status = "released - not in constant development"
+		type = "Theme, Open Source"
+		url = "https://github.com/harrymkt/zluinav"
 +++
 # Projects
 These projects are owned by <b id="ownername"></b>
