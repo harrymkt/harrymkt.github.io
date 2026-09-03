@@ -5,7 +5,7 @@ function addfooter() {
 	// Create a paragraph element
 	var copyrightParagraph = document.createElement("p");
 	// Create a copyright text node
-	var copyrightText = document.createTextNode("Copyright \u00A9 " + birthyear + "-" + new Date().getFullYear() + ', ');
+	var copyrightText = document.createTextNode("Copyright \u00A9 " + startyear + "-" + new Date().getFullYear() + ', ');
 	// Create an anchor element
 	var anchorElement = document.createElement("a");
 	anchorElement.href = "/";
